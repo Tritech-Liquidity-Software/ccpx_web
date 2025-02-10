@@ -4,8 +4,16 @@ services:
   ccpex:
     build:
       context: .
-    container_name: ccpexweb
+    container_name: ccpex
     restart: always
+    networks:
+      - custom_network
     ports:
       - "5044:3000"
 
+networks:
+  custom_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.100.0/24
