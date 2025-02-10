@@ -4,10 +4,8 @@ services:
   ccpex:
     build:
       context: .
-    container_name: ccpexweb_custom_network
+    container_name: ccpexweb
     restart: always
-    networks:
-      - custom_network
     ports:
       - "5044:3000"
 
