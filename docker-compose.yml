@@ -4,7 +4,7 @@ services:
   ccpex:
     build:
       context: .
-    container_name: ccpex
+    container_name: ccpexweb
     restart: always
     networks:
       - custom_network
