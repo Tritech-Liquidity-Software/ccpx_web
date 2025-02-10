@@ -11,9 +11,3 @@ services:
     ports:
       - "5044:3000"
 
-networks:
-  custom_network:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 10.50.0.0/24
