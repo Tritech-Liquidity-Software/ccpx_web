@@ -15,8 +15,8 @@ const grotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "CCPX - Home",
-  description: "Welcome to CCPX - The World's First AI-Based Trading Tool",
+  title: "CCPEX - Home",
+  description: "Welcome to CCPEX - The World's First AI-Based Trading Tool",
 };
 
 export default function RootLayout({

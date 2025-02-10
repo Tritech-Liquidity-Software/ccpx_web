@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  ccpex:
+    build: 
+      context: .
+    container_name: ccpex
+    restart: always
+    ports:
+      - "5044:3000"

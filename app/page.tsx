@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HomeOne from "./components/ui/home/HomeOne";
 import HomeTwo from "./components/ui/home/HomeTwo";
 import HomeThree from "./components/ui/home/HomeThree";

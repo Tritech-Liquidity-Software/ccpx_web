@@ -1,13 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 
-const Container = (props: any) => {
-    return (
-        <div
-            className={`container mx-auto ${props.className ? props.className : ""
-                }`}>
-            {props.children}
-        </div>
-    );
+interface ContainerProps {
+  className?: string;
+  children: React.ReactNode;
 }
+
+const Container: FC<ContainerProps> = ({ className = "", children }) => {
+  return <div className={`container mx-auto ${className}`}>{children}</div>;
+};
 
 export default Container;

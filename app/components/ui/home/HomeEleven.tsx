@@ -22,7 +22,7 @@ const HomeEleven = () => {
                             </div>
                         </div>
                         <p className="text-base font-normal text-[#BDB9B9]">
-                            "Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
+                            Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
                         </p>
                         <Image
                             src={bitcoin_low_op_icon}
@@ -39,7 +39,7 @@ const HomeEleven = () => {
                             </div>
                         </div>
                         <p className="text-base font-normal text-[#BDB9B9]">
-                            "Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
+                            Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
                         </p>
                         <Image
                             src={bitcoin_low_op_icon}
@@ -56,7 +56,7 @@ const HomeEleven = () => {
                             </div>
                         </div>
                         <p className="text-base font-normal text-[#BDB9B9]">
-                            "Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
+                            Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
                         </p>
                         <Image
                             src={bitcoin_low_op_icon}

@@ -9,7 +9,7 @@ import sec_four_shadow from "@/public/images/sec-four-shadow.svg"
 
 const HomeFour = () => {
     return (
-        <div className="relative">
+        <div className="relative" id="intelligence">
             <Container>
                 <div>
                     <h4 className="text-3xl font-semibold text-[#00BAA9] text-center max-sm:pb-8">Why Organized Intelligence?</h4>

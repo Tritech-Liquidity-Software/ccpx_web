@@ -16,7 +16,7 @@ const Footer = () => {
                         {/* Logo */}
                         <div className="col-span-1">
                             <h6 className="text-3xl font-bold bg-gradient-to-r from-[#00FF94] to-[#3CE1D8] bg-clip-text text-transparent font-[family-name:var(--font-space-grotesk)]">
-                                CCPX
+                                CCPEX
                             </h6>
                         </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
                                     <span className="text-base font-normal text-white">
                                         About Dr. Ernest Chan
                                     </span>
-                                    <span className="text-base font-normal text-white">Why CPPX</span>
+                                    <span className="text-base font-normal text-white">Why CCPEX</span>
                                     <span className="text-base font-normal text-white">Features</span>
                                 </div>
                                 <div className="w-6/12 max-md:w-full">
@@ -103,7 +103,7 @@ const Footer = () => {
                     {/* Footer Bottom Section */}
                     <div className="flex max-sm:flex-col max-sm:gap-y-4 justify-between items-center pb-6">
                         <div className="w-7/12 max-sm:w-full">
-                            <p className="text-xs font-normal text-[#C0C0C0] max-sm:text-center">Copyright© 2025 ccpx, All rights reserved. Powered by ccpx</p>
+                            <p className="text-xs font-normal text-[#C0C0C0] max-sm:text-center">Copyright© 2025 CCPEX, All rights reserved. Powered by CCPEX</p>
                         </div>
                         <div className="flex w-5/12 max-sm:w-full max-sm:justify-between">
                             <p className="text-xs font-normal text-[#C0C0C0] w-4/12 max-sm:w-full">Terms of Service</p>

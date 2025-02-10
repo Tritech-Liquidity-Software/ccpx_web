@@ -19,12 +19,12 @@ export async function POST(request: Request) {
             host: 'localhost',
             user: 'root',
             password: '',
-            database: 'ccpx_form',
+            database: 'CCPEX_form',
         });
 
         // Insert form data into the database
         const query = `
-            INSERT INTO ccpx_contact_form (firstname, lastname, mob_no, email, description)
+            INSERT INTO CCPEX_contact_form (firstname, lastname, mob_no, email, description)
             VALUES (?, ?, ?, ?, ?)
         `;
         const values = [firstname, lastname, mob_no, email, description || null];

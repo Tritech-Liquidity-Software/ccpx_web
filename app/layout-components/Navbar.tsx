@@ -1,52 +1,22 @@
 "use client";
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { AiOutlineMenu, AiOutlineCloseSquare } from "react-icons/ai";
-const Navbar = () => {
 
+const Navbar = () => {
     const navigation = [
-        {
-            title: "Home",
-            href: {
-                pathname: "/",
-                query: "",
-            },
-        },
-        {
-            title: "Features",
-            href: {
-                pathname: "#0",
-                query: "",
-            },
-        },
-        {
-            title: "Organized Intelligence",
-            href: {
-                pathname: "#0",
-                query: "",
-            },
-        },
-        {
-            title: "Why CPPX",
-            href: {
-                pathname: "#0",
-                query: "",
-            },
-        },
-        {
-            title: "FAQ",
-            href: {
-                pathname: "#0",
-                query: "",
-            },
-        },
+        { title: "Home", href: { pathname: "home", query: "" } },
+        { title: "Features", href: { pathname: "features", query: "" } },
+        { title: "Organized Intelligence", href: { pathname: "intelligence", query: "" } },
+        { title: "Why CCPEX", href: { pathname: "why-ccpex", query: "" } },
+        { title: "FAQ", href: { pathname: "faq", query: "" } },
     ];
 
     const [menuOpen, setMenuOpen] = useState(false);
-
     const [header, setHeader] = useState(false);
+    const [activeSection, setActiveSection] = useState("");
 
+    // Scroll effect for sticky header
     const scrollHeader = () => {
         if (window.scrollY >= 20) {
             setHeader(true);
@@ -55,11 +25,27 @@ const Navbar = () => {
         }
     };
 
+    // ScrollSpy effect
     useEffect(() => {
+        const sections = document.querySelectorAll("section");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            { threshold: 0.6 } // Adjust visibility threshold
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
         window.addEventListener("scroll", scrollHeader);
 
         return () => {
-            window.addEventListener("scroll", scrollHeader);
+            sections.forEach((section) => observer.unobserve(section));
+            window.removeEventListener("scroll", scrollHeader);
         };
     }, []);
 
@@ -68,7 +54,7 @@ const Navbar = () => {
     };
 
     const handleLinkClick = () => {
-        setMenuOpen(false); // Close the menu when a link is clicked
+        setMenuOpen(false);
     };
 
     return (
@@ -85,7 +71,9 @@ const Navbar = () => {
                         <ul>
                             <li>
                                 <Link href="/" className="flex gap-x-4 items-center">
-                                    <span className="text-3xl font-bold bg-gradient-to-r from-[#00FF94] to-[#3CE1D8] bg-clip-text text-transparent font-[family-name:var(--font-space-grotesk)]">CCPX</span>
+                                    <span className="text-3xl font-bold bg-gradient-to-r from-[#00FF94] to-[#3CE1D8] bg-clip-text text-transparent font-[family-name:var(--font-space-grotesk)]">
+                                        CCPEX
+                                    </span>
                                 </Link>
                             </li>
                         </ul>
@@ -94,8 +82,10 @@ const Navbar = () => {
                                 {navigation.map((menu, index) => (
                                     <li className="nav__item font-[family-name:var(--font-inter)]" key={index}>
                                         <Link
-                                            className="hover:text-[#00BAA9] text-lg text-white transition-all ease-in-out duration-300 focus:text-[#00BAA9]"
-                                            href={menu.href.pathname}
+                                            className={`hover:text-[#00BAA9] text-lg text-white transition-all ease-in-out duration-300 focus:text-[#00BAA9] ${
+                                                activeSection === menu.href.pathname ? "text-[#00BAA9]" : ""
+                                            }`}
+                                            href={`#${menu.href.pathname}`}
                                         >
                                             {menu.title}
                                         </Link>
@@ -107,7 +97,9 @@ const Navbar = () => {
                             <ul className="hidden sm:flex">
                                 <li>
                                     <div className="btn-wrap flex justify-between gap-x-4 items-center">
-                                        <a href="#0" className="text-white">Contact</a>
+                                        <a href="#contact" className="text-white">
+                                            Contact
+                                        </a>
                                         <button className="py-2 px-6 text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
                                             Start Trading Now
                                         </button>
@@ -136,17 +128,19 @@ const Navbar = () => {
                                 {navigation.map((menu, index) => (
                                     <li className="nav__item" key={index}>
                                         <Link
-                                            className="hover:text-[#00BAA9] text-sm transition-all ease-in-out duration-500 focus:text-[#00BAA9]"
-                                            href={menu.href.pathname}
-                                            onClick={() => {
-                                                handleLinkClick(); // Close the menu when a link is clicked
-                                            }}
+                                            className={`hover:text-[#00BAA9] text-sm transition-all ease-in-out duration-500 focus:text-[#00BAA9] ${
+                                                activeSection === menu.href.pathname ? "text-[#00BAA9]" : ""
+                                            }`}
+                                            href={`#${menu.href.pathname}`}
+                                            onClick={handleLinkClick}
                                         >
                                             {menu.title}
                                         </Link>
                                     </li>
                                 ))}
-                                <Link href="#0" className="hover:text-[#00BAA9] text-[15px] transition-all ease-in-out duration-500 focus:text-[#00BAA9]">Contact</Link>
+                                <Link href="#contact" className="hover:text-[#00BAA9] text-[15px] transition-all ease-in-out duration-500 focus:text-[#00BAA9]">
+                                    Contact
+                                </Link>
                                 <button className="py-2 px-6 text-sm text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
                                     Start Trading Now
                                 </button>
@@ -156,8 +150,7 @@ const Navbar = () => {
                 </div>
             </div>
         </>
+    );
+};
 
-    )
-}
-
-export default Navbar
+export default Navbar;

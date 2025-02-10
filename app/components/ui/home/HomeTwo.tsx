@@ -14,8 +14,8 @@ import sec_two_icon3 from "@/public/images/sec-two-icon3.svg"
 
 const HomeTwo = () => {
     return (
-        <div className="pt-16 pb-32 max-sm:pb-12 max-sm:pt-6">
-            <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-28 max-sm:pb-12">Features of CCPX</h2>
+        <div className="pt-16 pb-32 max-sm:pb-12 max-sm:pt-6" id="features">
+            <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-28 max-sm:pb-12">Features of CCPEX</h2>
             <Container>
                 <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-x-6 gap-y-6 px-12 max-sm:px-4 h-full">
                     <div className="w-full flex flex-col items-center h-full">
