@@ -15,12 +15,19 @@ export async function POST(request: Request) {
         }
 
         // Create a connection to the database
+        // const connection = await mysql.createConnection({
+        //     host: 'localhost',
+        //     user: 'root',
+        //     password: '',
+        //     database: 'form_data',
+        // });
         const connection = await mysql.createConnection({
-            host: 'localhost',
-            user: 'root',
-            password: '',
-            database: 'CCPEX_form',
+            host: '103.110.127.100',
+            user: 'weconnectfx',
+            password: 'n.3hpen3g!tU',
+            database: 'weconnectfx_site',
         });
+
 
         // Insert form data into the database
         const query = `

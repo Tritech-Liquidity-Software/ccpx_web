@@ -14,7 +14,21 @@ const HomeTweleve = () => {
         email: "",
         description: ""
     });
+    const [loading, setLoading] = useState(false);
 
+
+    const validateForm = () => {
+        if (!formData.firstname.trim() || !formData.lastname.trim()) {
+            return "First name and last name are required.";
+        }
+        if (!/^\d{10,}$/.test(formData.mob_no)) {
+            return "Enter a valid mobile number (at least 10 digits).";
+        }
+        if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            return "Enter a valid email address.";
+        }
+        return "";
+    };
     const [showModal, setShowModal] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
 
@@ -24,6 +38,19 @@ const HomeTweleve = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setErrorMessage("");
+
+        const error = validateForm();
+        if (error) {
+            setErrorMessage(error);
+            return;
+        }
+
+        setLoading(true);
+        setTimeout(() => {
+            console.log("Form submitted:", formData);
+            setLoading(false);
+        }, 2000);
 
         try {
             const response = await fetch("/api/contact-form", {
@@ -86,7 +113,14 @@ const HomeTweleve = () => {
                                     <textarea name="description" rows={4} value={formData.description} onChange={handleChange} className="bg-[rgba(0,0,0,0.25)] text-white border border-[rgba(153,153,153,0.16)] py-3 px-2 rounded-md focus:outline-none" required></textarea>
                                 </div>
                                 {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-                                <button type="submit" className="primary-btn text-white py-2 px-4 rounded-md hover:bg-transparent">Submit</button>
+                                <button type="submit" className={`primary-btn text-white py-2 px-4 rounded-md flex justify-center items-center ${loading ? "opacity-50 cursor-not-allowed" : "hover:bg-transparent"}`} disabled={loading}>
+                                    {loading ? (
+                                        <svg className="animate-spin h-5 w-5 mr-2 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0a12 12 0 00-12 12h4z"></path>
+                                        </svg>
+                                    ) : "Submit"}
+                                </button>
                             </form>
                         </div>
                         <div className="bg-[url('/images/contacts-bg-img.svg')] bg-center bg-[_100%_100%] bg-opacity-70 p-4 flex flex-col items-center">
