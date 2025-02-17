@@ -23,7 +23,7 @@ const HomeTwo = () => {
                         <div className="sec-two-card1 w-full rounded-2xl flex flex-col items-center h-full pb-8">
                             <Image src={sec_two_shadow1} className="w-6/12" alt="sec_two_shadow1"></Image>
                             <Image src={sec_two_icon1} className="w-2/12 h-fit relative bottom-8" alt="sec_two_icon1"></Image>
-                            <h3 className="text-2xl font-medium text-white text-center">Decentralized and secure <br className="max-sm:hidden" /> trading.</h3>
+                            <h3 className="text-2xl font-medium text-white text-center max-sm:text-sm">Decentralized and secure <br className="max-sm:hidden" /> trading.</h3>
                         </div>
                     </div>
                     <div className="w-full flex flex-col items-center h-full">
@@ -31,7 +31,7 @@ const HomeTwo = () => {
                         <div className="sec-two-card2 w-full rounded-2xl flex flex-col items-center h-full pb-8">
                             <Image src={sec_two_shadow2} className="w-6/12" alt="sec_two_shadow2"></Image>
                             <Image src={sec_two_icon2} className="w-2/12 h-fit relative bottom-8" alt="sec_two_icon2"></Image>
-                            <h3 className="text-2xl font-medium text-white text-center">Powered by Organized <br className="max-sm:hidden" /> Intelligence.</h3>
+                            <h3 className="text-2xl font-medium text-white text-center max-sm:text-sm">Powered by Organized <br className="max-sm:hidden" /> Intelligence.</h3>
                         </div>
                     </div>
                     <div className="w-full flex flex-col items-center h-full">
@@ -39,7 +39,7 @@ const HomeTwo = () => {
                         <div className="sec-two-card3 w-full rounded-2xl flex flex-col items-center h-full pb-8">
                             <Image src={sec_two_shadow3} className="w-6/12" alt="sec_two_shadow3"></Image>
                             <Image src={sec_two_icon3} className="w-2/12 h-fit relative bottom-8" alt="sec_two_icon3"></Image>
-                            <h3 className="text-2xl font-medium text-white text-center">Potential for up to 2% daily <br className="max-sm:hidden" /> profits.</h3>
+                            <h3 className="text-2xl font-medium text-white text-center max-sm:text-sm">Potential for up to 2% daily <br className="max-sm:hidden" /> profits.</h3>
                         </div>
                     </div>
                 </div>

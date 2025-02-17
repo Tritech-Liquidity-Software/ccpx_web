@@ -15,9 +15,9 @@ const HomeSeven = () => {
                             <Image src={sec_seven_img} className="w-12/12 h-fit" alt="sec_seven_img"></Image>
                         </div>
                         <div className="col-span-1 h-full">
-                            <h5 className="text-xl font-normal text-[#00BAA9] relative right-20 top-20 mt-5 max-sm:static max-sm:text-center">Dr. Chans Trading Strategy :</h5>
-                            <h5 className="text-xl font-normal text-white relative top-36 max-sm:static max-sm:text-center max-sm:py-2">Focuses on statistical arbitrage, mean reversion, and momentum-based trading.</h5>
-                            <h5 className="text-xl font-normal text-white relative top-52 max-sm:static max-sm:text-center max-sm:py-2">Uses advanced machine learning models to identify market inefficiencies and optimize trade execution.</h5>
+                            <h5 className="text-xl font-normal text-[#00BAA9] relative right-20 top-20 mt-5 max-sm:static max-sm:text-center max-sm:text-sm">Dr. Chans Trading Strategy :</h5>
+                            <h5 className="text-xl font-normal text-white relative top-36 max-sm:static max-sm:text-center max-sm:py-2 max-sm:text-sm">Focuses on statistical arbitrage, mean reversion, and momentum-based trading.</h5>
+                            <h5 className="text-xl font-normal text-white relative top-52 max-sm:static max-sm:text-center max-sm:py-2 max-sm:text-sm">Uses advanced machine learning models to identify market inefficiencies and optimize trade execution.</h5>
                         </div>
                     </div>
                 </div>

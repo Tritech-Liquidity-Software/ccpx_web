@@ -10,7 +10,7 @@ const HomeEleven = () => {
     return (
         <div>
             <h4 className="text-3xl font-semibold text-[#00BAA9] text-center pb-6 max-sm:pb-0 max-sm:pt-8">Testimonials</h4>
-            <p className="text-xl font-normal text-white text-center py-2">Discover what our satisfied customers have to say about their experiences with our products/services.</p>
+            <p className="text-xl font-normal text-white text-center py-2 max-sm:text-sm">Discover what our satisfied customers have to say about their experiences with our products/services.</p>
             <Container>
                 <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-x-6 max-sm:gap-y-6 px-6 pt-16 max-sm:pt-6">
                     <div className="sec-eleven-card-one py-10 px-8 flex flex-col justify-center gap-y-6 relative overflow-hidden">
@@ -21,7 +21,7 @@ const HomeEleven = () => {
                                 <p className="text-lg font-normal text-white">Trader and tutor</p>
                             </div>
                         </div>
-                        <p className="text-base font-normal text-[#BDB9B9]">
+                        <p className="text-base font-normal text-[#BDB9B9] max-sm:text-sm">
                             Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
                         </p>
                         <Image
@@ -35,10 +35,10 @@ const HomeEleven = () => {
                             <Image src={etherum_icon} className="w-12 h-fit" alt="etherum_icon" />
                             <div className="flex flex-col justify-between">
                                 <h6 className="text-lg font-medium text-[#00BAA9]">Jammytrade18</h6>
-                                <p className="text-lg font-normal text-white">Trader and tutor</p>
+                                <p className="text-lg font-normal text-white max-sm:text-sm">Trader and tutor</p>
                             </div>
                         </div>
-                        <p className="text-base font-normal text-[#BDB9B9]">
+                        <p className="text-base font-normal text-[#BDB9B9] max-sm:text-sm">
                             Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
                         </p>
                         <Image
@@ -52,10 +52,10 @@ const HomeEleven = () => {
                             <Image src={lt_icon} className="w-12 h-fit" alt="lt_icon" />
                             <div className="flex flex-col justify-between">
                                 <h6 className="text-lg font-medium text-[#00BAA9]">tradelooper99</h6>
-                                <p className="text-lg font-normal text-white">Trader and tutor</p>
+                                <p className="text-lg font-normal text-white max-sm:text-sm">Trader and tutor</p>
                             </div>
                         </div>
-                        <p className="text-base font-normal text-[#BDB9B9]">
+                        <p className="text-base font-normal text-[#BDB9B9] max-sm:text-sm">
                             Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
                         </p>
                         <Image

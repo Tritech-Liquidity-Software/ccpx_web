@@ -10,7 +10,7 @@ import HomeNine from "./components/ui/home/HomeNine";
 import HomeTen from "./components/ui/home/HomeTen";
 import HomeEleven from "./components/ui/home/HomeEleven";
 import HomeTweleve from "./components/ui/home/HomeTweleve";
-
+import HomeTweleves from "./components/ui/home/Homethirteen"
 export default function Home() {
   return (
     <div>
@@ -22,10 +22,12 @@ export default function Home() {
       <HomeSix />
       <HomeSeven />
       <HomeEight />
+      <HomeTweleves />
       <HomeNine />
       <HomeTen />
       <HomeEleven />
       <HomeTweleve />
+
     </div>
   );
 }

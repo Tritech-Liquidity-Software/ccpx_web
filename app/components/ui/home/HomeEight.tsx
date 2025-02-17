@@ -24,7 +24,7 @@ const HomeEight = () => {
                         {/* Content Overlay */}
                         <div className="flex flex-col gap-y-4 items-center mt-6 absolute top-3/4 transform -translate-y-1/2">
                             <h5 className="text-lg max-sm:text-base font-normal text-[#00BAA9] text-center">Stealth Trader</h5>
-                            <p className="text-lg max-sm:text-base font-normal text-white text-center">
+                            <p className="text-lg max-sm:text-sm font-normal text-white text-center">
                                 Earns up to <span className="text-[#00BAA9]">0.5%</span> daily profit
                             </p>
                             <p className="text-lg max-sm:text-base font-normal text-white text-center">

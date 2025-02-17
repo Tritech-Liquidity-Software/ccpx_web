@@ -16,42 +16,42 @@ const HomeTen = () => {
                 <div className="flex flex-col gap-y-4 px-64 max-sm:px-2">
                     <Accordion title="1. What is CCPEX?" content={
                         <div>
-                            <p className="text-white">CCPEX is a decentralized crypto trading platform powered by Organized Intelligence, designed for optimized trading and consistent profits.</p>
+                            <p className="text-white max-sm:text-sm">CCPEX is a decentralized crypto trading platform powered by Organized Intelligence, designed for optimized trading and consistent profits.</p>
                         </div>
                     } />
                     <Accordion title="2. How does Organized Intelligence work?" content={
                         <div>
-                            <p className="text-white">OI combines real-time data, predictive modeling, and adaptive algorithms to make smarter trading decisions.</p>
+                            <p className="text-white max-sm:text-sm">OI combines real-time data, predictive modeling, and adaptive algorithms to make smarter trading decisions.</p>
                         </div>
                     } />
                     <Accordion title="3. How secure is CCPEX?" content={
                         <div>
-                            <p className="text-white">CCPEX is fully decentralized, ensuring complete transparency and security.</p>
+                            <p className="text-white max-sm:text-sm">CCPEX is fully decentralized, ensuring complete transparency and security.</p>
                         </div>
                     } />
                     <Accordion title="4. Who can use CCPEX?" content={
                         <div>
-                            <p className="text-white">Anyone, including individual investors, professional traders, and financial institutions.</p>
+                            <p className="text-white max-sm:text-sm">Anyone, including individual investors, professional traders, and financial institutions.</p>
                         </div>
                     } />
                     <Accordion title="5. What is the profit potential with CCPEX?" content={
                         <div>
-                            <p className="text-white">Users can generate up to 2% daily profits using CCPEXs advanced trading tools.</p>
+                            <p className="text-white max-sm:text-sm">Users can generate up to 2% daily profits using CCPEXs advanced trading tools.</p>
                         </div>
                     } />
                     <Accordion title="6. How is Organized Intelligence different from AI?" content={
                         <div>
-                            <p className="text-white">Unlike traditional AI, OI is proactive, adaptive, and blends human intuition with machine learning for superior results.</p>
+                            <p className="text-white max-sm:text-sm">Unlike traditional AI, OI is proactive, adaptive, and blends human intuition with machine learning for superior results.</p>
                         </div>
                     } />
                     <Accordion title="7. What makes CCPEX unique?" content={
                         <div>
-                            <p className="text-white">CCPEX is the first platform to use Organized Intelligence in decentralized trading, ensuring unmatched accuracy and profitability.</p>
+                            <p className="text-white max-sm:text-sm">CCPEX is the first platform to use Organized Intelligence in decentralized trading, ensuring unmatched accuracy and profitability.</p>
                         </div>
                     } />
                     <Accordion title="8. How do I get started?" content={
                         <div>
-                            <p className="text-white">Simply sign up on the platform, connect your wallet, and start trading with CCPEXs user-friendly interface.</p>
+                            <p className="text-white max-sm:text-sm">Simply sign up on the platform, connect your wallet, and start trading with CCPEXs user-friendly interface.</p>
                         </div>
                     } />
                 </div>
