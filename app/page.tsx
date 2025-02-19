@@ -10,23 +10,43 @@ import HomeNine from "./components/ui/home/HomeNine";
 import HomeTen from "./components/ui/home/HomeTen";
 import HomeEleven from "./components/ui/home/HomeEleven";
 import HomeTweleve from "./components/ui/home/HomeTweleve";
-import HomeTweleves from "./components/ui/home/Homethirteen"
+import HomeTweleves from "./components/ui/home/Homethirteen";
+import HomeTweleveaa from "./components/ui/home/HomeSectionFoteen";
+import HomeTweleveaaa from "./components/ui/home/HowItWorks";
+import HomeTweleveaaaa from "./components/ui/home/oi-powered";
+import HomeTweleveaaaaa from "./components/ui/home/ClickExecution";
+
+
+
 export default function Home() {
   return (
     <div>
       <HomeOne />
-      <HomeTwo />
-      <HomeThree />
-      <HomeFour />
-      <HomeFive />
-      <HomeSix />
       <HomeSeven />
       <HomeEight />
+      <HomeFive />
+      <HomeFour />
+      <HomeTweleveaaa />
+
+
+
+      <HomeTwo />
+      <HomeThree />
+      <HomeSix />
+
       <HomeTweleves />
       <HomeNine />
-      <HomeTen />
       <HomeEleven />
+
+      {/* <HomeTen />
       <HomeTweleve />
+      <HomeTweleveaa />
+      <HomeTweleveaaaa />
+      <HomeTweleveaaaaa /> */}
+
+
+
+
 
     </div>
   );

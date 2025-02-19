@@ -8,7 +8,7 @@ import sec_ten_icon2 from "@/public/images/sec-ten-icon2.svg"
 const HomeTen = () => {
     return (
         <div id="faq">
-            <h4 className="text-3xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-0 max-sm:pt-8">Frequently Asked Questions</h4>
+            <h4 className="text-3xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-0 max-sm:pt-8 pt-28">Frequently Asked Questions</h4>
             <Container>
                 <div className="flex justify-end px-48 max-sm:px-2 relative top-6 max-sm:static max-sm:py-1">
                     <Image src={sec_ten_icon} className="w-12 max-sm:w-8 h-fit" alt="sec_ten_icon"></Image>

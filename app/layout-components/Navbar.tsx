@@ -2,19 +2,23 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineCloseSquare } from "react-icons/ai";
+import ContactPopup from "../ContactPopup";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
     const navigation = [
         { title: "Home", href: { pathname: "home", query: "" } },
-        { title: "Features", href: { pathname: "features", query: "" } },
-        { title: "Organized Intelligence", href: { pathname: "intelligence", query: "" } },
-        { title: "Why CCPEX", href: { pathname: "why-ccpex", query: "" } },
-        { title: "FAQ", href: { pathname: "faq", query: "" } },
+        { title: "Why OI", href: { pathname: "WhyOI", query: "" } },
+        { title: "How it Works", href: { pathname: "howitsworks", query: "" } },
+        { title: "About", href: { pathname: "About", query: "" } },
+        { title: "Why Click Base", href: { pathname: "/why-click-base", query: "" } },
+        { title: "FAQ", href: { pathname: "/faq", query: "" } },
     ];
 
     const [menuOpen, setMenuOpen] = useState(false);
     const [header, setHeader] = useState(false);
     const [activeSection, setActiveSection] = useState("");
+    const pathname = usePathname(); // current page path
 
     // Scroll effect for sticky header
     const scrollHeader = () => {
@@ -25,7 +29,7 @@ const Navbar = () => {
         }
     };
 
-    // ScrollSpy effect
+    // ScrollSpy effect for sections on the same page
     useEffect(() => {
         const sections = document.querySelectorAll("section");
         const observer = new IntersectionObserver(
@@ -36,11 +40,10 @@ const Navbar = () => {
                     }
                 });
             },
-            { threshold: 0.6 } // Adjust visibility threshold
+            { threshold: 0.6 }
         );
 
         sections.forEach((section) => observer.observe(section));
-
         window.addEventListener("scroll", scrollHeader);
 
         return () => {
@@ -57,6 +60,12 @@ const Navbar = () => {
         setMenuOpen(false);
     };
 
+    // Helper to determine link destination.
+    // If the pathname starts with "/" it is considered a full page route;
+    // otherwise, it is a section ID for scroll navigation.
+    const getLinkHref = (menuPath: string) =>
+        menuPath.startsWith("/") ? menuPath : `/#${menuPath}`;
+
     return (
         <>
             <div
@@ -66,7 +75,7 @@ const Navbar = () => {
                         : "bg-transparent w-full h-24 z-[999] fixed top-0 transition-all ease-in-out duration-500 max-sm:h-20"
                 }
             >
-                <div className="container mx-auto px-[4.5rem] max-sm:px-4 h-full">
+                <div className="container mx-auto px-[2.5rem] max-sm:px-4 h-full">
                     <div className="flex justify-between items-center h-full">
                         <ul>
                             <li>
@@ -83,9 +92,13 @@ const Navbar = () => {
                                     <li className="nav__item font-[family-name:var(--font-inter)]" key={index}>
                                         <Link
                                             className={`hover:text-[#00BAA9] text-lg text-white transition-all ease-in-out duration-300 focus:text-[#00BAA9] ${
-                                                activeSection === menu.href.pathname ? "text-[#00BAA9]" : ""
+                                                // Only highlight if it's a section on the current page
+                                                !menu.href.pathname.startsWith("/") &&
+                                                activeSection === menu.href.pathname
+                                                    ? "text-[#00BAA9]"
+                                                    : ""
                                             }`}
-                                            href={`#${menu.href.pathname}`}
+                                            href={getLinkHref(menu.href.pathname)}
                                         >
                                             {menu.title}
                                         </Link>
@@ -97,9 +110,7 @@ const Navbar = () => {
                             <ul className="hidden sm:flex">
                                 <li>
                                     <div className="btn-wrap flex justify-between gap-x-4 items-center">
-                                        <a href="#contact" className="text-white">
-                                            Contact
-                                        </a>
+                                        <ContactPopup />
                                         <button className="py-2 px-6 text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
                                             Start Trading Now
                                         </button>
@@ -129,16 +140,23 @@ const Navbar = () => {
                                     <li className="nav__item" key={index}>
                                         <Link
                                             className={`hover:text-[#00BAA9] text-sm transition-all ease-in-out duration-500 focus:text-[#00BAA9] ${
-                                                activeSection === menu.href.pathname ? "text-[#00BAA9]" : ""
+                                                !menu.href.pathname.startsWith("/") &&
+                                                activeSection === menu.href.pathname
+                                                    ? "text-[#00BAA9]"
+                                                    : ""
                                             }`}
-                                            href={`#${menu.href.pathname}`}
+                                            href={getLinkHref(menu.href.pathname)}
                                             onClick={handleLinkClick}
                                         >
                                             {menu.title}
                                         </Link>
                                     </li>
                                 ))}
-                                <Link href="#contact" className="hover:text-[#00BAA9] text-[15px] transition-all ease-in-out duration-500 focus:text-[#00BAA9]">
+                                <Link
+                                    href="#contact"
+                                    className="hover:text-[#00BAA9] text-[15px] transition-all ease-in-out duration-500 focus:text-[#00BAA9]"
+                                    onClick={handleLinkClick}
+                                >
                                     Contact
                                 </Link>
                                 <button className="py-2 px-6 text-sm text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
