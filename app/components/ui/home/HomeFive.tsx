@@ -9,7 +9,7 @@ import sec5_etherum_icon from "@/public/images/sec5-etherum-icon.svg"
 
 const HomeFive = () => {
     return (
-        <div className="max-sm:pt-12 relative">
+        <div className="max-sm:pt-12 pt-8 relative">
             <Container>
                 <div id="About">
                     <h4 className="text-3xl font-semibold text-[#00BAA9] text-center max-sm:pb-8">About Dr. Ernest Chan</h4>

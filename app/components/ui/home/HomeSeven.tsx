@@ -5,7 +5,7 @@ import sec_seven_img from "@/public/images/sec-seven-img.svg"
 
 const HomeSeven = () => {
     return (
-        <div className="pt-36 max-sm:pt-6">
+        <div className="pt-14 max-sm:pt-6">
             <Container>
                 <div>
                     <h4 className="text-3xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-6">OI Bots - AI Trading Powered by Dr. Ernest Chans Strategy</h4>

@@ -80,9 +80,8 @@ const HomeTweleve = () => {
 
     return (
         <>
-            <div className="pt-28 max-sm:pt-12" id="contact">
+            <div className="max-sm:pt-12" id="contact">
                 <h4 className="text-3xl font-semibold text-[#00BAA9] text-center pb-6 max-sm:pb-0 max-sm:pt-0">Contacts</h4>
-
                 <Container>
                     <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-x-6 px-8 max-sm:px-0">
                         <div className="p-6">

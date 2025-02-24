@@ -28,7 +28,7 @@ const HomeSix = () => {
                         </div>
                     </div>
                     <div className="flex justify-center">
-                        <Image src={sec_six_img} className="w-8/12 h-fit" alt="sec_six_img"></Image>
+                        <Image src={sec_six_img} className="w-8/12 max-sm:w-[60.6667%] h-fit" alt="sec_six_img"></Image>
                     </div>
                 </div>
             </Container>
