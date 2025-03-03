@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineCloseSquare } from "react-icons/ai";
 import ContactPopup from "../ContactPopup";
-import { usePathname } from "next/navigation";
+import Image from "next/image"
+import ccpexlogo from "@/public/images/ccpexlogo.png"
 
 const Navbar = () => {
     const navigation = [
@@ -18,7 +19,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [header, setHeader] = useState(false);
     const [activeSection, setActiveSection] = useState("");
-    const pathname = usePathname(); // current page path
+    // const pathname = usePathname(); // current page path
 
     // Scroll effect for sticky header
     const scrollHeader = () => {
@@ -80,9 +81,8 @@ const Navbar = () => {
                         <ul>
                             <li>
                                 <Link href="/" className="flex gap-x-4 items-center">
-                                    <span className="text-3xl font-bold bg-gradient-to-r from-[#00FF94] to-[#3CE1D8] bg-clip-text text-transparent font-[family-name:var(--font-space-grotesk)]">
-                                        CCPEX
-                                    </span>
+                                <Image src={ccpexlogo} className="w-[80px] max-sm:w-[48px] h-fit" alt="ccpexlogo"></Image>
+
                                 </Link>
                             </li>
                         </ul>

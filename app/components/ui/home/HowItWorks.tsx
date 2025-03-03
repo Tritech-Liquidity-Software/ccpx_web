@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Container from "../Container";
 import one from "@/public/images/firstclick.png"
 import two from "@/public/images/firstclick2.png"
 import three from "@/public/images/firstclick3.png"
@@ -40,7 +39,7 @@ const IsoCertifiedSection = () => {
                             <Image src={two} alt="Circle icon" className="" />
                             {/* Title/Text */}
                             <p className="text-[#ffff] mt-4">
-                                Each click triggers an intelligent trade, leveraging OI's full computational capacity, deep learning analysis, and risk-adjusted strategy.
+                                Each click triggers an intelligent trade, leveraging OIs full computational capacity, deep learning analysis, and risk-adjusted strategy.
                             </p>
                         </div>
                         {/* Card 3 */}
@@ -49,7 +48,7 @@ const IsoCertifiedSection = () => {
                             <Image src={three} alt="Circle icon" className="" />
                             {/* Title/Text */}
                             <p className="text-[#ffff] mt-4">
-                                These clicks ensure that your trades are executed with market-optimized intelligence, maximizing profitability while efficiently utilizing OI's energy and resources.
+                                These clicks ensure that your trades are executed with market-optimized intelligence, maximizing profitability while efficiently utilizing OIs energy and resources.
                             </p>
                         </div>
                     </div>

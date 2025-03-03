@@ -5,6 +5,8 @@ import fb_icon from "@/public/images/fb-icon.svg"
 import insta_icon from "@/public/images/insta-icon.svg"
 import yt_icon from "@/public/images/yt-icon.svg"
 import x_icon from "@/public/images/x-icon.svg"
+import ccpexlogo from "@/public/images/ccpexlogo.png"
+
 
 const Footer = () => {
     return (
@@ -15,9 +17,8 @@ const Footer = () => {
                     <div className="grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-x-4 max-sm:gap-x-0 gap-y-3">
                         {/* Logo */}
                         <div className="col-span-1">
-                            <h6 className="text-3xl font-bold bg-gradient-to-r from-[#00FF94] to-[#3CE1D8] bg-clip-text text-transparent font-[family-name:var(--font-space-grotesk)]">
-                                CCPEX
-                            </h6>
+                            <Image src={ccpexlogo} className="w-[80px] max-sm:w-[48px] h-fit" alt="ccpexlogo"></Image>
+
                         </div>
 
                         {/* Home Link */}

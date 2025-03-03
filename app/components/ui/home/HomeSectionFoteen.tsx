@@ -1,10 +1,5 @@
 import Image from "next/image";
-import Container from "../Container";
-import based from "@/public/images/click-based.png"
-import left from "@/public/images/lefthalf.png"
-import right from "@/public/images/fullcircle.png"
-import small from "@/public/images/smallcircle.png"
-
+import based from "@/public/images/helloworld.png"
 
 
 const IsoCertifiedSection = () => {
@@ -12,15 +7,6 @@ const IsoCertifiedSection = () => {
         <>
             <section className="relative text-white flex flex-col items-center text-center py-20">
                 {/* Background Circles */}
-                <div className="absolute top-[24rem] left-[-0.5rem] w-[14rem] max-sm:hidden">
-                    <Image src={left} alt="Circle icon" className="" />
-                </div>
-                <div className="absolute bottom-[19.5rem] right-10 w-32 h-32 md:w-32 md:h-32 max-sm:hidden">
-                    <Image src={small} alt="Circle icon" width={500} height={500} className="" />
-                </div>
-                <div className="absolute top-1/3 left-[17%] w-20 h-20 md:w-[4rem] md:h-28 max-sm:hidden">
-                    <Image src={right} alt="Circle icon" className="" />
-                </div>
 
                 <div className="px-2">
                     {/* Title */}
@@ -28,9 +14,10 @@ const IsoCertifiedSection = () => {
                         Click-Based Trading Model Powered by OI
                     </h2>
 
+
                     {/* Image */}
                     <div className="relative w-full my-8 flex justify-center">
-                        <Image src={based} alt="Trading AI" width={500} height={500} className="w-full max-w-xs md:max-w-md lg:max-w-lg" />
+                        <Image src={based} alt="Trading AI" className="w-full max-w-4xl" />
                     </div>
 
                     {/* Description */}
@@ -46,7 +33,6 @@ const IsoCertifiedSection = () => {
                 </div>
             </section>
         </>
-
     );
 };
 

@@ -1,9 +1,6 @@
 import Image from "next/image";
-import Container from "../Container";
 import one from "@/public/images/organize.png"
-import two from "@/public/images/firstclick2.png"
 import three from "@/public/images/whatis.png"
-import bitcion from "@/public/images/planbot.svg"
 import arrow from "@/public/images/performance.png"
 import arrow1 from "@/public/images/doller1.png"
 import arrow2 from "@/public/images/doller2.png"
@@ -25,7 +22,7 @@ const IsoCertifiedSection = () => {
                                         <Image src={arrow} alt="Circle icon" className="" />
                                     </div>
                                 </div>
-                                <p className="text-white text-sm md:text-base"><span className="text-[#00BAA9]">Maximized Efficiency</span> - Each click utilizes OI's full computational power for high-precision, high-return trading.</p>
+                                <p className="text-white text-sm md:text-base"><span className="text-[#00BAA9]">Maximized Efficiency</span> - Each click utilizes OIs full computational power for high-precision, high-return trading.</p>
                             </div>
                         </div>
                         <div className="bg-[linear-gradient(263.3deg,rgba(0,0,0,0.25)_5.82%,rgba(217,217,217,0.03)_97.91%)] border border-[#1e3232] p-[17px] rounded-md mt-5">
@@ -35,7 +32,7 @@ const IsoCertifiedSection = () => {
                                         <Image src={arrow1} alt="Circle icon" className="" />
                                     </div>
                                 </div>
-                                <p className="text-white text-sm md:text-base"><span className="text-[#00BAA9]">Fair & Transparent </span> - You pay for OI's GPU energy, AI-driven intelligence, and trade execution power per optimized trade.</p>
+                                <p className="text-white text-sm md:text-base"><span className="text-[#00BAA9]">Fair & Transparent </span> - You pay for OIs GPU energy, AI-driven intelligence, and trade execution power per optimized trade.</p>
                             </div>
                         </div>
                         <div className="bg-[linear-gradient(263.3deg,rgba(0,0,0,0.25)_5.82%,rgba(217,217,217,0.03)_97.91%)] border border-[#1e3232] p-[17px] rounded-md mt-5">
@@ -66,7 +63,7 @@ const IsoCertifiedSection = () => {
                     </div>
                 </div>
                 <h2 className="text-3xl font-semibold text-[#00BAA9] text-center  max-sm:pb-0 max-sm:pt-5 pt-20 max-sm:text-xl max-sm:px-4 ">Why Organized Intelligence Needs Clicks?</h2>
-                <p className="text-[#FFFFFF] pt-5 text-center">OI doesn't execute random trades - it processes massive amounts of data, forecasts market trends, and <br />strategically places trades with the highest probability of success.</p>
+                <p className="text-[#FFFFFF] pt-5 text-center">OI doesnot execute random trades - it processes massive amounts of data, forecasts market trends, and <br />strategically places trades with the highest probability of success.</p>
 
                 <div className="flex justify-center pt-12">
                     <Image src={one} alt="Circle icon" className="" />
