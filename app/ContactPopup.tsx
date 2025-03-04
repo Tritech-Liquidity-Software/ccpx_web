@@ -1,4 +1,7 @@
-import { useState} from "react";
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image"
+import ccpexlogo from "@/public/images/ccpexlogo.png"
 
 const ContactPopup = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -108,7 +111,9 @@ const ContactPopup = () => {
                         </button>
 
                         {/* Popup Content */}
-                        <h2 className="text-2xl text-center bg-gradient-to-r from-[#00FF94] to-[#3CE1D8] bg-clip-text text-transparent font-[family-name:var(--font-space-grotesk)] font-bold">CCPEX</h2>
+                        <Link href="/" className="flex justify-center items-center">
+                            <Image src={ccpexlogo} className="w-[80px] max-sm:w-[48px] h-fit" alt="ccpexlogo"></Image>
+                        </Link>
                         <p className="text-center text-white text-base">Please complete the form and submit your request. </p>
                         <p className="text-center text-[#3CE1D8] py-2">We will be in touch shortly</p>
                         <p className="text-center text-[#B7B7B7] text-sm pb-5">We offer a large range of trade service to enhance your financial grow.</p>
