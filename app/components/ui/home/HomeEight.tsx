@@ -28,7 +28,7 @@ const HomeEight = () => {
                 />
 
                 {/* Content */}
-                <div className="flex flex-col justify-between text-center text-white w-full gap-y-4 flex-1 relative top-[-320px] max-sm:top-[-394px]">
+                <div className="flex flex-col justify-between text-center text-white w-full gap-y-4 flex-1 relative top-[-320px] max-sm:top-[-369px] 2xl:top-[-415px]">
                   {/* Title */}
                   <h5 className="text-lg md:text-xl font-normal text-[#00BAA9]">
                     {["Stealth Trader", "Quantum Navigator", "Infinity Matrix"][
@@ -37,7 +37,7 @@ const HomeEight = () => {
                   </h5>
 
                   {/* Description */}
-                  <ul className="space-y-2 text-sm md:text-[12px] text-[#D8D8D8] text-left mx-auto px-[20px]">
+                  <ul className="space-y-2 text-sm md:text-[12px] text-[#D8D8D8] text-left mx-auto px-[20px] max-sm:px-[40px]">
                     {[
                       [
                         "Focuses on low-risk",
@@ -60,39 +60,41 @@ const HomeEight = () => {
                   </ul>
 
                   {/* Profit Information */}
-                  <p className="text-base">
+                  <p className="text-base max-sm:text-sm">
                     Earns up to{" "}
                     <span className="text-[#00BAA9]">
-                      {["0.5%", "1.5%", "0.5%"][index]}
+                      {["0.5%", "1.5%", "2%"][index]}
                     </span>{" "}
                     daily profit
                   </p>
 
                   {/* Minimum Investment */}
-                  <p className="text-base">
-                    Minimum investment required: <br className="hidden md:block" />
+                  <p className="text-base max-sm:text-sm">
+                    Minimum investment required: <br className="hidden md:block max-sm:block" />
                     <span className="text-[#00BAA9]">
-                      ${["1,000", "5,000", "1,000"][index]}
+                      ${["1,000", "5,000", "10,000"][index]}
                     </span>
                   </p>
 
                   {/* Subscription Plan */}
-                  <p className="text-sm text-[#D8D8D8] max-sm:mt-[50px]">
+                  <p className="text-sm text-[#D8D8D8] max-sm:mt-[18px] 2xl:mt-[28px]">
                     Subscribe plan ${["29", "69", "99"][index]}
                   </p>
 
                   {/* Buy Button */}
                   <div className="flex justify-center mt-auto">
-                    <button className="w-[160px] py-2.5 px-6 text-white bg-gradient-to-r from-[#00BAA9] to-[#007D75] rounded-lg hover:scale-105 transition">
-                      Buy
-                    </button>
+                    <a href="https://oi.ccpex.io/user/register" target="_blank">
+                      <button className="w-[160px] py-2.5 px-6 text-white bg-gradient-to-r from-[#00BAA9] to-[#007D75] rounded-lg hover:scale-105 transition">
+                        Buy
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
             )
           )}
         </div>
-        
+
         {/* Footer Section */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 my-16 px-4 mt-[-200px] max-sm:mt-[-40px]">
           <div className="sec-five-icon flex justify-center py-4 px-8 rounded-lg bg-gray-800">

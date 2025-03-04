@@ -73,9 +73,12 @@ const Footer = () => {
                                 <span className="text-base font-normal text-[#00BAA9]">
                                     Start Your Trade Journey Today
                                 </span>
-                                <button className="primary-btn py-2.5 px-8 text-white w-full rounded-md bg-[#00BAA9] hover:bg-[#008b84] transition-all">
-                                    Join the Revolution today
-                                </button>
+                                <a href="https://oi.ccpex.io/user/register" target="_blank">
+
+                                    <button className="primary-btn py-2.5 px-8 text-white w-full rounded-md bg-[#00BAA9] hover:bg-[#008b84] transition-all">
+                                        Join the Revolution today
+                                    </button>
+                                </a>
                             </div>
 
                             {/* Newsletter */}

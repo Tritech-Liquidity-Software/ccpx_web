@@ -16,7 +16,7 @@ const IsoCertifiedSection = () => {
                 <div className="absolute bottom-[2.5rem] right-[-2rem] w-32 h-32 md:w-32 md:h-32 max-sm:hidden">
                     <Image src={arrow} alt="Circle icon" className="" />
                 </div>
-                <div className="max-w-7xl mx-16">
+                <div className="max-w-7xl mx-16 2xl:max-w-[120rem]">
                     {/* Heading */}
                     <h2 className="text-center text-3xl font-bold text-[#00BAA9]">
                         How It Works?

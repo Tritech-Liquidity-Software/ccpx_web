@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 const ContactPopup = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,13 +14,13 @@ const ContactPopup = () => {
         description: ""
     });
 
-    // Automatically open popup after 2 seconds
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsOpen(true);
-        }, 2000);
-        return () => clearTimeout(timer);
-    }, []);
+    // // Automatically open popup after 2 seconds
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setIsOpen(true);
+    //     }, 2000);
+    //     return () => clearTimeout(timer);
+    // }, []);
 
     const validateForm = () => {
         if (!formData.firstname.trim() || !formData.lastname.trim()) {
@@ -123,7 +123,7 @@ const ContactPopup = () => {
                                     <input type="text" name="lastname" value={formData.lastname} onChange={handleChange} className="bg-[#F5F5F508]  placeholder:text-[#B7B7B77A] text-[#B7B7B7] border border-[rgba(153,153,153,0.16)] py-1 px-2 rounded-md focus:outline-none" required />
                                 </div>
                             </div>
-                            <div className="flex justify-between max-sm:flex-col max-sm:gap-y-6">
+                            <div className="flex justify-between max-sm:flex-col max-sm:gap-y-6 gap-x-4">
                                 <div className="flex flex-col gap-y-2">
                                     <label className="text-[14px] font-normal text-white" htmlFor="mob_no">Mobile No</label>
                                     <input type="text" name="mob_no" pattern="\d*" value={formData.mob_no} onChange={handleChange} className="bg-[#F5F5F508]  placeholder:text-[#B7B7B77A] text-[#B7B7B7] border border-[rgba(153,153,153,0.16)] py-1 px-2 rounded-md focus:outline-none" required />
@@ -133,7 +133,7 @@ const ContactPopup = () => {
                                     <input type="email" name="email" value={formData.email} onChange={handleChange} className="bg-[#F5F5F508]  placeholder:text-[#B7B7B77A] text-[#B7B7B7] border border-[rgba(153,153,153,0.16)] py-1 px-2 rounded-md focus:outline-none" required />
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-y-2">
+                            <div className="flex flex-col gap-y-2 ">
                                 <label className="text-lg font-normal text-white" htmlFor="description">Description</label>
                                 <textarea name="description" value={formData.description} onChange={handleChange} className="bg-[#F5F5F508] text-white border border-[rgba(153,153,153,0.16)] py-1 px-2 rounded-md focus:outline-none" required></textarea>
                             </div>

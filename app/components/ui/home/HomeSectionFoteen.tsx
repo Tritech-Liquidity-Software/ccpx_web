@@ -27,8 +27,13 @@ const IsoCertifiedSection = () => {
 
                     {/* Buttons */}
                     <div className="mt-6 flex gap-4 justify-center">
-                        <button className="py-2 px-6 text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">Start Trading</button>
-                        <button className="px-6 py-3 border border-gray-500 text-white font-semibold rounded-lg hover:bg-gray-700">Learn More</button>
+                        <a href="https://oi.ccpex.io/user/register" target="_blank">
+                            <button className="py-2 px-6 text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">Start Trading</button>
+                        </a>
+                        <a href="https://oi.ccpex.io/user/register" target="_blank">
+                            <button className="px-6 py-3 border border-gray-500 text-white font-semibold rounded-lg hover:bg-gray-700">Learn More</button>
+                        </a>
+
                     </div>
                 </div>
             </section>

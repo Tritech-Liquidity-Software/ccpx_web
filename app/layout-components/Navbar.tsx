@@ -125,7 +125,7 @@ const Navbar = () => {
                     <div
                         className={
                             menuOpen
-                                ? "fixed left-0 top-0 w-[75%] sm:hidden h-screen bg-[#ffffff] p-10 ease-in duration-500 shadow-lg z-[1]"
+                                ? "fixed left-0 top-0 w-[75%] sm:hidden h-screen bg-[#101010] text-white p-10 ease-in duration-500 shadow-lg z-[1]"
                                 : "fixed left-[-100%] top-0 p-10 w-[75%] h-screen ease-in duration-500 shadow-lg"
                         }
                     >
@@ -152,13 +152,8 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                 ))}
-                                <Link
-                                    href="#contact"
-                                    className="hover:text-[#00BAA9] text-[15px] transition-all ease-in-out duration-500 focus:text-[#00BAA9]"
-                                    onClick={handleLinkClick}
-                                >
-                                    Contact
-                                </Link>
+                                        <ContactPopup />
+
                                 <button className="py-2 px-6 text-sm text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
                                     Start Trading Now
                                 </button>

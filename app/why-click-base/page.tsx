@@ -10,10 +10,7 @@ export default function click() {
         <div>
             <HomeTweleveaa />
             <HomeTweleveaaaa />
-            <HomeTweleveaaaaa />
-
-
-            
+            <HomeTweleveaaaaa />          
         </div>
     );
 }

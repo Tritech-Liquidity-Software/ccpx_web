@@ -13,8 +13,14 @@ const HomeOne = () => {
                         <h1 className="text-4xl leading-[48px] max-sm:text-2xl font-semibold text-white">Welcome to CCPEX - The Worlds First AI-Based Trading Tool Revolutionized by Organized Intelligence.</h1>
                         <p className="text-lg font-normal text-white py-6 max-sm:text-sm ">Generate up to 2% daily profits with advanced Organized Intelligence built on Dr. Ernest Chans principles.</p>
                         <div className="flex justify-start gap-x-2 max-sm:flex-col max-sm:gap-y-4">
-                            <button className="primary-btn py-2.5 px-8 text-white">Start Trading</button>
-                            <button className="bg-transparent border border-[rgba(153,153,153,0.8)] rounded-lg py-2.5 px-8 text-white">Learn More</button>
+                            <a href="https://oi.ccpex.io/user/register" target="_blank">
+                                <button className="primary-btn py-2.5 px-8 text-white">Start Trading</button>
+                            </a>
+                            <a href="https://oi.ccpex.io/user/register" target="_blank">
+
+                                <button className="bg-transparent border border-[rgba(153,153,153,0.8)] rounded-lg py-2.5 px-8 text-white">Learn More</button>
+                            </a>
+
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-center relative">
