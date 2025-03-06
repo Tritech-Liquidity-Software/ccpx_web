@@ -17,12 +17,12 @@ const HomeEleven = () => {
                         <div className="flex justify-start items-center gap-x-4">
                             <Image src={bitcoin_icon} className="w-12 h-fit" alt="bitcoin_icon" />
                             <div className="flex flex-col justify-between">
-                                <h6 className="text-lg font-medium text-[#00BAA9]">traderxyz001</h6>
-                                <p className="text-lg font-normal text-white">Trader and tutor</p>
+                                <h6 className="text-lg font-medium text-[#00BAA9]">CryptoMaverick99</h6>
+                                <p className="text-base font-normal text-white">Professional Forex & Crypto Trader | Mentor</p>
                             </div>
                         </div>
                         <p className="text-base font-normal text-[#BDB9B9] max-sm:text-sm">
-                            Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
+                            My trading journey started with uncertainty, but I stayed committed to learning and refining my strategy. Now, I navigate the markets with confidence, consistently achieving a 50% return. Trading isn’t just about numbers; it’s about mindset, patience, and execution!
                         </p>
                         <Image
                             src={bitcoin_low_op_icon}
@@ -34,12 +34,12 @@ const HomeEleven = () => {
                         <div className="flex justify-start items-center gap-x-4">
                             <Image src={etherum_icon} className="w-12 h-fit" alt="etherum_icon" />
                             <div className="flex flex-col justify-between">
-                                <h6 className="text-lg font-medium text-[#00BAA9]">Jammytrade18</h6>
-                                <p className="text-lg font-normal text-white max-sm:text-sm">Trader and tutor</p>
+                                <h6 className="text-lg font-medium text-[#00BAA9]">TradeMasterLeo</h6>
+                                <p className="text-base font-normal text-white max-sm:text-sm">Seasoned Trader <br /> Trading Coach</p>
                             </div>
                         </div>
                         <p className="text-base font-normal text-[#BDB9B9] max-sm:text-sm">
-                            Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
+                            Trading transformed my financial outlook! From being a beginner filled with doubts to mastering my own strategy, I ve witnessed a consistent 50% outcome. The key? Discipline, risk management, and a deep understanding of market movements.
                         </p>
                         <Image
                             src={bitcoin_low_op_icon}
@@ -51,12 +51,13 @@ const HomeEleven = () => {
                         <div className="flex justify-start items-center gap-x-4">
                             <Image src={lt_icon} className="w-12 h-fit" alt="lt_icon" />
                             <div className="flex flex-col justify-between">
-                                <h6 className="text-lg font-medium text-[#00BAA9]">tradelooper99</h6>
-                                <p className="text-lg font-normal text-white max-sm:text-sm">Trader and tutor</p>
+                                <h6 className="text-lg font-medium text-[#00BAA9]">FXStrategistPro
+                                </h6>
+                                <p className="text-base font-normal text-white max-sm:text-sm">Full-Time Trader | Educator | Market Analyst</p>
                             </div>
                         </div>
                         <p className="text-base font-normal text-[#BDB9B9] max-sm:text-sm">
-                            Trading has been a game-changer for me! When I first started, I was hesitant and unsure, but with the right strategy and patience, I’ve seen incredible growth’’ with <span className="text-[#00BAA9]">50%</span> outcome.
+                            Success in trading comes from persistence. I remember my early days—full of hesitation and challenges. But by sticking to my strategy and analyzing market trends, I’ve turned those struggles into steady profits. A 50% return is just the beginning!
                         </p>
                         <Image
                             src={bitcoin_low_op_icon}

@@ -81,7 +81,7 @@ const Navbar = () => {
                         <ul>
                             <li>
                                 <Link href="/" className="flex gap-x-4 items-center">
-                                <Image src={ccpexlogo} className="w-[80px] max-sm:w-[48px] h-fit" alt="ccpexlogo"></Image>
+                                    <Image src={ccpexlogo} className="w-[80px] max-sm:w-[48px] h-fit" alt="ccpexlogo"></Image>
 
                                 </Link>
                             </li>
@@ -94,10 +94,10 @@ const Navbar = () => {
                                             className={`hover:text-[#00BAA9] text-lg text-white transition-all ease-in-out duration-300 focus:text-[#00BAA9] ${
                                                 // Only highlight if it's a section on the current page
                                                 !menu.href.pathname.startsWith("/") &&
-                                                activeSection === menu.href.pathname
+                                                    activeSection === menu.href.pathname
                                                     ? "text-[#00BAA9]"
                                                     : ""
-                                            }`}
+                                                }`}
                                             href={getLinkHref(menu.href.pathname)}
                                         >
                                             {menu.title}
@@ -111,9 +111,11 @@ const Navbar = () => {
                                 <li>
                                     <div className="btn-wrap flex justify-between gap-x-4 items-center">
                                         <ContactPopup />
-                                        <button className="py-2 px-6 text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
-                                            Start Trading Now
-                                        </button>
+                                        <a href="https://oi.ccpex.io/user/register" target="_blank">
+                                            <button className="py-2 px-6 text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
+                                                Start Trading Now
+                                            </button>
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
@@ -139,12 +141,11 @@ const Navbar = () => {
                                 {navigation.map((menu, index) => (
                                     <li className="nav__item" key={index}>
                                         <Link
-                                            className={`hover:text-[#00BAA9] text-sm transition-all ease-in-out duration-500 focus:text-[#00BAA9] ${
-                                                !menu.href.pathname.startsWith("/") &&
+                                            className={`hover:text-[#00BAA9] text-sm transition-all ease-in-out duration-500 focus:text-[#00BAA9] ${!menu.href.pathname.startsWith("/") &&
                                                 activeSection === menu.href.pathname
-                                                    ? "text-[#00BAA9]"
-                                                    : ""
-                                            }`}
+                                                ? "text-[#00BAA9]"
+                                                : ""
+                                                }`}
                                             href={getLinkHref(menu.href.pathname)}
                                             onClick={handleLinkClick}
                                         >
@@ -152,11 +153,13 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                 ))}
-                                        <ContactPopup />
+                                <ContactPopup />
 
-                                <button className="py-2 px-6 text-sm text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
-                                    Start Trading Now
-                                </button>
+                                <a href="https://oi.ccpex.io/user/register" target="_blank">
+                                    <button className="py-2 px-6 text-sm text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
+                                        Start Trading Now
+                                    </button>
+                                </a>
                             </ul>
                         </div>
                     </div>
