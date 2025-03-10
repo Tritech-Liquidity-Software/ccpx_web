@@ -7,7 +7,7 @@ import sec_six_img from "@/public/images/sec-six-img.png"
 const HomeSix = () => {
     return (
         <div className="max-sm:pt-12 max-sm:pb-6">
-            <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-28 max-sm:pb-6">Who This Is For</h2>
+            <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-28 max-sm:pb-6 max-sm:text-2xl">Who This Is For</h2>
             <Container>
                 <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-x-6 max-sm:gap-y-6 max-sm:px-2">
                     <div className="flex flex-col justify-center items-center max-sm:gap-y-6">

@@ -7,13 +7,13 @@ const ClickExecutionToast = () => {
     return (
         <>
             <div className="text-white py-12 px-6 md:px-16 lg:px-32">
-                <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-bold text-teal-400">
+                <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 max-sm:text-2xl">
                     Click Execution Toast Message
                 </h2>
                 <div className="flex flex-col md:flex-row items-center justify-between mt-8 gap-8">
                     {/* Left Section */}
                     <div className="md:w-1/2 text-left">
-                        <h3 className="text-lg md:text-xl font-semibold">
+                        <h3 className="text-lg md:text-xl font-semibold ">
                             When a user clicks to execute a trade,
                         </h3>
                         <p className="text-gray-400 mt-2">

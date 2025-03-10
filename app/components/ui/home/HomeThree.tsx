@@ -9,7 +9,7 @@ import sec3_bitcoin_icon from "@/public/images/sec3-bitcoin-icon.svg"
 const HomeThree = () => {
     return (
         <div className="pb-28">
-            <h2 className="text-3xl font-semibold text-[#00BAA9] text-center max-sm:pb-6">Difference Between AI and OI</h2>
+            <h2 className="text-3xl font-semibold text-[#00BAA9] text-center max-sm:pb-6 max-sm:text-2xl">Difference Between AI and OI</h2>
             <div className="flex justify-end relative top-5 -z-10 max-sm:static max-sm:hidden">
                 <Image src={sec3_bitcoin_icon} className="w-28 h-fit" alt="sec3_bitcoin_icon"></Image>
             </div>

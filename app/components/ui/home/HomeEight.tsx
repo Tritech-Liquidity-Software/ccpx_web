@@ -9,7 +9,7 @@ import sec8_etherum_icon from "@/public/images/sec-eight-etherum-icon.svg";
 const HomeEight = () => {
   return (
     <div className="pt-20">
-      <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-6">
+      <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-6 max-sm:text-2xl">
         Our 3 artificial intelligence bot trading by OI
       </h2>
       <Container>
