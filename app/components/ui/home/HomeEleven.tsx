@@ -9,7 +9,7 @@ import lt_icon from "@/public/images/sec11-lt-icon.svg"
 const HomeEleven = () => {
     return (
         <div>
-            <h4 className="text-3xl font-semibold text-[#00BAA9] text-center pb-6 max-sm:pb-0 max-sm:pt-8">Testimonials</h4>
+            <h3  className="text-3xl font-semibold text-[#00BAA9] text-center pb-6 max-sm:pb-0 max-sm:pt-8">Testimonials</h3>
             <p className="text-xl font-normal text-white text-center py-2 max-sm:text-sm">Discover what our satisfied customers have to say about their experiences with our products/services.</p>
             <Container>
                 <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-x-6 max-sm:gap-y-6 px-6 py-16 max-sm:pt-6">

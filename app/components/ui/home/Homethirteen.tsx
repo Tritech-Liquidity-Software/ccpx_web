@@ -5,7 +5,7 @@ const IsoCertifiedSection = () => {
     return (
         <>
             <Container>
-                <h4 className="text-3xl font-semibold text-[#00BAA9] text-center pb-3 max-sm:pb-0 max-sm:pt-5 pt-10 max-sm:text-xl max-sm:px-4">ISO 42001 Certification - AI Security & Trust</h4>
+                <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-3 max-sm:pb-0 max-sm:pt-5 pt-10 max-sm:text-xl max-sm:px-4">ISO 42001 Certification - AI Security & Trust</h2>
                 <p className="text-lg max-sm:text-sm font-normal text-white text-center pb-10 max-sm:px-4">CCPEX is the worlds first ISO 42001 certified Al-based crypto exchange</p>
 
                 <div className="flex flex-col md:flex-row items-center justify-center">

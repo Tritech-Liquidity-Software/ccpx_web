@@ -8,7 +8,7 @@ const HomeSeven = () => {
         <div className="pt-14 max-sm:pt-6">
             <Container>
                 <div>
-                    <h4 className="text-3xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-6">OI Bots - AI Trading Powered by Dr. Ernest Chans Strategy</h4>
+                    <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-6">OI Bots - AI Trading Powered by Dr. Ernest Chans Strategy</h2>
                     <p className="text-xl font-normal text-white text-center py-2">CCPEX offers three specialized OI Bots trained on Dr. Ernest Chans strategy to maximize <br className="max-sm:hidden" /> trading efficiency and profit potential.</p>
                     <div className="grid grid-cols-3 max-sm:grid-cols-1 px-12 max-sm:px-2">
                         <div className="col-span-2 flex justify-end">

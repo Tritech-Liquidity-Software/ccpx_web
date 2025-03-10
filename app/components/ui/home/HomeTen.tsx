@@ -8,13 +8,13 @@ import sec_ten_icon2 from "@/public/images/sec-ten-icon2.svg"
 const HomeTen = () => {
     return (
         <div id="faq">
-            <h4 className="text-3xl max-sm:text-xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-0 max-sm:pt-[5rem] pt-[10rem]">Frequently Asked Questions</h4>
+            <h1 className="text-3xl max-sm:text-xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-0 max-sm:pt-[5rem] pt-[10rem]">CCPEX’s Frequently Asked Questions</h1>
             <Container>
                 <div className="flex justify-end px-48 max-sm:px-2 relative top-6 max-sm:static max-sm:py-1">
                     <Image src={sec_ten_icon} className="w-12 max-sm:w-8 h-fit" alt="sec_ten_icon"></Image>
                 </div>
                 <div className="flex flex-col gap-y-4 px-64 max-sm:px-2">
-                    <Accordion title="1. What is CCPEX?" content={
+                    <Accordion title="1. Does CCPEX require a minimum deposit amount?" content={
                         <div>
                             <p className="text-white max-sm:text-sm">CCPEX is a decentralized crypto trading platform powered by Organized Intelligence, designed for optimized trading and consistent profits.</p>
                         </div>

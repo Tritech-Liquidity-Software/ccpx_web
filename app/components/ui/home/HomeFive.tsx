@@ -12,7 +12,7 @@ const HomeFive = () => {
         <div className="max-sm:pt-12 pt-8 relative">
             <Container>
                 <div id="About">
-                    <h4 className="text-3xl font-semibold text-[#00BAA9] text-center max-sm:pb-8">About Dr. Ernest Chan</h4>
+                    <h2 className="text-3xl font-semibold text-[#00BAA9] text-center max-sm:pb-8">About Dr. Ernest Chan</h2>
                     <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-x-6 pt-20 max-sm:pt-4">
                         <div className="flex justify-center">
                             <Image src={sec_five_img} className="w-11/12 h-fit" alt="sec_five_img"></Image>

@@ -12,7 +12,7 @@ const HomeFour = () => {
         <div className="relative" id="WhyOI">
             <Container>
                 <div>
-                    <h4 className="text-3xl font-semibold text-[#00BAA9] text-center max-sm:py-20 pt-8">Why Organized Intelligence?</h4>
+                    <h2 className="text-3xl font-semibold text-[#00BAA9] text-center max-sm:py-20 pt-8">Why Organized Intelligence?</h2>
                     <div className="flex justify-between max-sm:flex-col gap-x-4 max-sm:gap-y-6 max-sm:px-2">
                         <div className="sec-four-card-bg py-3 px-4 flex items-center gap-x-6 max-sm:gap-x-4 w-4/12 relative top-32 left-20 max-sm:static max-sm:w-full">
                             <Image src={sec_four_icon1} className="w-20 h-fit" alt="sec_four_icon1"></Image>

@@ -10,7 +10,7 @@ import sec_nine_icon4 from "@/public/images/sec-nine-icon4.svg"
 const HomeNine = () => {
     return (
         <div className="pt-32 max-sm:pt-6" id="why-ccpex">
-            <h4 className="text-3xl max-sm:text-xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-6">Referral Program - Earn by Referring Clients</h4>
+            <h2 className="text-3xl max-sm:text-xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-6">Refer Your friend & Get Rewarded</h2>
             <Container>
                 <div className="flex flex-col items-center px-20 max-sm:px-2 max-sm:gap-y-6">
                     <div className="flex justify-between relative top-20 px-48 w-full max-sm:static max-sm:flex-col gap-y-4 max-sm:px-2 max-sm:w-full">

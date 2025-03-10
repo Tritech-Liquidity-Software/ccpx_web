@@ -9,9 +9,9 @@ import sec8_etherum_icon from "@/public/images/sec-eight-etherum-icon.svg";
 const HomeEight = () => {
   return (
     <div className="pt-20">
-      <h4 className="text-3xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-6">
-        Our 3 OI Bots
-      </h4>
+      <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-10 max-sm:pb-6">
+        Our 3 artificial intelligence bot trading by OI
+      </h2>
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-16 lg:px-32">
           {[sec_eight_card1, sec_eight_card2, sec_eight_card3].map(
