@@ -27,9 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
+      <head>
       <meta name="google-site-verification" content="KJaa691BlTxZwz4u2A4PHZWF-qp7tWGydb1aSqXSKnw" />
-      </Head>
+      </head>
+
       <body
         className={`${inter.variable} ${grotesk.variable} antialiased`}
       >
