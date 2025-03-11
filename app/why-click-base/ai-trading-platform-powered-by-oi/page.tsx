@@ -1,7 +1,7 @@
 
-import HomeTweleveaa from "../components/ui/home/HomeSectionFoteen";
-import HomeTweleveaaaa from "../components/ui/home/oi-powered";
-import HomeTweleveaaaaa from "../components/ui/home/ClickExecution";
+import HomeTweleveaa from "../../components/ui/home/HomeSectionFoteen";
+import HomeTweleveaaaa from "../../components/ui/home/oi-powered";
+import HomeTweleveaaaaa from "../../components/ui/home/ClickExecution";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

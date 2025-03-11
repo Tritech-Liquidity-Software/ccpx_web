@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "./layout-components/Navbar";
 import Footer from "./layout-components/Footer";
+import Head from "next/head";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,6 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+      <meta name="google-site-verification" content="KJaa691BlTxZwz4u2A4PHZWF-qp7tWGydb1aSqXSKnw" />
+      </Head>
       <body
         className={`${inter.variable} ${grotesk.variable} antialiased`}
       >

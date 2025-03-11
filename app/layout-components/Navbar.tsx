@@ -8,12 +8,12 @@ import ccpexlogo from "@/public/images/ccpexlogo.png"
 
 const Navbar = () => {
     const navigation = [
-        { title: "Home", href: { pathname: "home", query: "" } },
+        { title: "Home", href: { pathname: "AI-trading-solution-home", query: "" } },
         { title: "Why OI", href: { pathname: "WhyOI", query: "" } },
         { title: "How it Works", href: { pathname: "howitsworks", query: "" } },
         { title: "About", href: { pathname: "About", query: "" } },
-        { title: "Why Click Base", href: { pathname: "/why-click-base", query: "" } },
-        { title: "FAQ", href: { pathname: "/faq", query: "" } },
+        { title: "Why Click Base", href: { pathname: "/why-click-base/ai-trading-platform-powered-by-oi", query: "" } },
+        { title: "FAQ", href: { pathname: "/faq-learn-how-AI-trading", query: "" } },
     ];
 
     const [menuOpen, setMenuOpen] = useState(false);

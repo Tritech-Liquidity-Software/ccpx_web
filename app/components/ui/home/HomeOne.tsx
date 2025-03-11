@@ -6,7 +6,7 @@ import Container from "../Container"
 
 const HomeOne = () => {
     return (
-        <div className="bg-[url('/images/hero-one-bg.png')] bg-[_100%] bg-top bg-no-repeat max-sm:bg-contain pt-24" id="home">
+        <div className="bg-[url('/images/hero-one-bg.png')] bg-[_100%] bg-top bg-no-repeat max-sm:bg-contain pt-24" id="AI-trading-solution-home">
             <Container>
                 <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-x-6 items-center px-10 max-sm:px-6">
                     <div>
