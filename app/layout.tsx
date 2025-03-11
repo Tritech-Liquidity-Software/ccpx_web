@@ -3,7 +3,6 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "./layout-components/Navbar";
 import Footer from "./layout-components/Footer";
-import Head from "next/head";
 
 const inter = Inter({
   variable: "--font-inter",
