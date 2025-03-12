@@ -110,8 +110,13 @@ const Footer = () => {
                             <p className="text-xs font-normal text-[#C0C0C0] max-sm:text-center">Copyright© 2025 CCPEX, All rights reserved. Powered by CCPEX</p>
                         </div>
                         <div className="flex w-5/12 max-sm:w-full max-sm:justify-between">
-                            <p className="text-xs font-normal text-[#C0C0C0] w-4/12 max-sm:w-full">Terms of Service</p>
-                            <p className="text-xs font-normal text-[#C0C0C0] w-8/12 max-sm:w-full max-sm:text-right">Privacy Policy</p>
+                            <a href="/Terms-of-Service" className="text-xs font-normal text-[#C0C0C0] w-4/12 max-sm:w-full">
+                                Terms of Service
+                            </a>
+                            <a href="/Privacy-Policy" className="text-xs font-normal text-[#C0C0C0] w-4/12 max-sm:w-full">
+                                Privacy Policy
+                            </a>
+
                         </div>
                     </div>
                 </div>
