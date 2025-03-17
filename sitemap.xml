@@ -9,17 +9,22 @@
 
 <url>
   <loc>https://ccpex.io/</loc>
-  <lastmod>2025-03-12T07:50:37+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://ccpex.io/why-click-base/ai-trading-platform-powered-by-oi</loc>
-  <lastmod>2025-03-12T07:50:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ccpex.io/faq-learn-how-AI-trading</loc>
-  <lastmod>2025-03-12T07:50:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ccpex.io/Terms-of-Service</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ccpex.io/Privacy-Policy</loc>
   <priority>0.80</priority>
 </url>
 
