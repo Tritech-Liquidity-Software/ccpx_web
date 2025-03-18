@@ -20,7 +20,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
                 className="p-4 cursor-pointer flex justify-between items-center accordion-bg"
                 onClick={toggleAccordion}
             >
-                <h3 className="font-medium text-white">{title}</h3>
+                <h2 className="font-medium text-white">{title}</h2>
                 <span className="transition-transform duration-200">
                     {isOpen ? (
                         <MinusIcon className="w-5 h-5 text-white" />
