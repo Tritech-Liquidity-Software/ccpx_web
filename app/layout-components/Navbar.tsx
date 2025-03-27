@@ -14,6 +14,10 @@ const Navbar = () => {
         { title: "About", href: { pathname: "About", query: "" } },
         { title: "Why Click Base", href: { pathname: "/why-click-base/ai-trading-platform-powered-by-oi", query: "" } },
         { title: "FAQ", href: { pathname: "/faq-learn-how-AI-trading", query: "" } },
+        { title: "Community", href: { pathname: "/Community", query: "" } },
+
+        
+
     ];
 
     const [menuOpen, setMenuOpen] = useState(false);
@@ -87,11 +91,11 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <div className="hidden sm:flex">
-                            <ul className="hidden sm:flex gap-x-14 header-bg py-2 px-4">
+                            <ul className="hidden sm:flex gap-x-[1.5rem] header-bg py-2 px-4">
                                 {navigation.map((menu, index) => (
                                     <li className="nav__item font-[family-name:var(--font-inter)]" key={index}>
                                         <Link
-                                            className={`hover:text-[#00BAA9] text-lg text-white transition-all ease-in-out duration-300 focus:text-[#00BAA9] ${
+                                            className={`hover:text-[#00BAA9] text-base text-white transition-all ease-in-out duration-300 focus:text-[#00BAA9] ${
                                                 // Only highlight if it's a section on the current page
                                                 !menu.href.pathname.startsWith("/") &&
                                                     activeSection === menu.href.pathname
