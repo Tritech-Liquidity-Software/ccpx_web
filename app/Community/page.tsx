@@ -1,9 +1,5 @@
 import Image from 'next/image';
-import three from "@/public/images/whatis.png"
-import arrow from "@/public/images/performance.png"
-import arrow1 from "@/public/images/doller1.png"
-import arrow2 from "@/public/images/doller2.png"
-import arrow3 from "@/public/images/doller3.png"
+
 
 export default function CCPEXSection() {
     return (
