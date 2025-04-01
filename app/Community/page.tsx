@@ -39,9 +39,11 @@ export default function CCPEXSection() {
                     That means the success of our technology translates into real-world rewards, growth incentives, and life-changing opportunities for YOU.
                 </p>
                 <div className="flex justify-center">
-                    <button className="mt-8 bg-[#00BAA9] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#008F88] transition">
-                        🫱 Join the CCPEX Community
-                    </button>
+                    <a href="https://t.me/+nRpkACYcNHs1ZjI9" target='_blank'>
+                        <button className="mt-8 bg-[#00BAA9] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#008F88] transition">
+                            🫱 Join the CCPEX Community
+                        </button>
+                    </a>
                 </div>
             </div>
             <div className="mt-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
@@ -111,12 +113,12 @@ export default function CCPEXSection() {
                     With every click, trade, and success story, CCPEX grows stronger—not just as a platform, but as a movement.
                     We believe in shared success, collective rewards, and in giving back to the people who make this platform possible: YOU.
                 </p>
-                <button className="mt-8 bg-[#00BAA9] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#008F88] transition">
-                    🫱 Join the CCPEX Community
-                </button>
+                <a href="https://t.me/+nRpkACYcNHs1ZjI9" target='_blank'>
+                    <button className="mt-8 bg-[#00BAA9] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#008F88] transition">
+                        🫱 Join the CCPEX Community
+                    </button>
+                </a>
             </div>
-
-
         </>
     );
 }

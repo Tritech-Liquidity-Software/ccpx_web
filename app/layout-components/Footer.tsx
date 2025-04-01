@@ -1,14 +1,14 @@
 import React from "react"
 import Container from "../components/ui/Container"
 import Image from "next/image"
-import fb_icon from "@/public/images/fb-icon.svg"
 import insta_icon from "@/public/images/insta-icon.svg"
 import yt_icon from "@/public/images/yt-icon.svg"
-import x_icon from "@/public/images/x-icon.svg"
 import ccpexlogo from "@/public/images/ccpexlogo.png"
+import Link from "next/link"
 
 
 const Footer = () => {
+
     return (
         <div className="p-6 max-sm:p-3 max-lg:p-1">
             <Container>
@@ -22,23 +22,33 @@ const Footer = () => {
 
                         {/* Home Link */}
                         <div className="col-span-1 max-sm:col-span-2">
-                            <span className="text-base font-normal text-white">Home</span>
+                            <Link href="/">
+                                <span className="text-base font-normal text-white">Home</span>
+                            </Link>
                         </div>
 
                         {/* Navigation Links */}
                         <div className="col-span-3 max-md:col-span-2">
                             <div className="flex max-md:flex-col gap-y-4">
                                 <div className="w-6/12 max-md:w-full flex flex-col gap-y-4">
-                                    <span className="text-base font-normal text-white">
-                                        About Dr. Ernest Chan
-                                    </span>
-                                    <span className="text-base font-normal text-white">Why CCPEX</span>
-                                    <span className="text-base font-normal text-white">Features</span>
+                                    <a href="#howitsworks">
+                                        <span className="text-base font-normal text-white">
+                                            How it Works
+                                        </span>
+                                    </a>
+                                    <a href="#WhyOI">
+                                        <span className="text-base font-normal text-white">Why CCPEX</span>
+                                    </a>
+                                    <a href="#About">
+                                        <span className="text-base font-normal text-white">About</span>
+                                    </a>
                                 </div>
                                 <div className="w-6/12 max-md:w-full">
-                                    <span className="text-base font-normal text-white">
-                                        Organized Intelligence
-                                    </span>
+                                    <a href="/why-click-base/ai-trading-platform-powered-by-oi">
+                                        <span className="text-base font-normal text-white">
+                                            Why Click Base
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
 
@@ -49,8 +59,13 @@ const Footer = () => {
                                 </span>
                                 <div className="flex justify-center gap-x-4">
                                     {/* <Image src={fb_icon} className="w-7 h-fit" alt="Facebook" /> */}
-                                    <Image src={insta_icon} className="w-7 h-fit" alt="Instagram" />
-                                    <Image src={yt_icon} className="w-7 h-fit" alt="YouTube" />
+                                    <a href="https://www.instagram.com/ccpex.io/" target="_blank">
+                                        <Image src={insta_icon} className="w-7 h-fit" alt="Instagram" />
+                                    </a>
+                                    <a href="https://t.me/+nRpkACYcNHs1ZjI9" target="_blank">
+                                        <Image src={yt_icon} className="w-7 h-fit" alt="YouTube" />
+                                    </a>
+
                                     {/* <Image src={x_icon} className="w-7 h-fit" alt="Twitter" /> */}
                                 </div>
                             </div>
@@ -59,11 +74,12 @@ const Footer = () => {
                         {/* Contact & FAQ */}
                         <div className="col-span-2 flex flex-col gap-y-10">
                             <div className="flex max-md:flex-col gap-y-4">
-                                <div className="w-6/12 max-md:w-full">
+                                {/* <div className="w-6/12 max-md:w-full">
                                     <span className="text-base font-normal text-white">Contact</span>
-                                </div>
+                                </div> */}
                                 <div className="w-6/12 max-md:w-full">
-                                    <span className="text-base font-normal text-white">FAQ</span>
+                                    <a href="/faq-learn-how-AI-trading">                                    <span className="text-base font-normal text-white">FAQ</span>
+                                    </a>
                                 </div>
                             </div>
 
