@@ -13,12 +13,12 @@ const HomeEight = () => {
         Our 3 artificial intelligence bot trading by OI
       </h2>
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-16 lg:px-32">
+        <div className="grid grid-cols-1 md:grid-cols-3 max-lg:grid-cols-2 gap-6 max-lg:gap-[10px]  px-4  lg:px-32 !max-lg:px-4">
           {[sec_eight_card1, sec_eight_card2, sec_eight_card3].map(
             (card, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center overflow-hidden h-full max-sm:h-[800px]  rounded-xl p-6"
+                className="flex flex-col items-center overflow-hidden h-full max-sm:h-[800px]  rounded-xl p-6 max-lg:p-1"
               >
                 {/* Image */}
                 <Image
@@ -28,7 +28,7 @@ const HomeEight = () => {
                 />
 
                 {/* Content */}
-                <div className="flex flex-col justify-between text-center text-white w-full gap-y-4 flex-1 relative top-[-320px] max-sm:top-[-369px] 2xl:top-[-415px]">
+                <div className="flex flex-col justify-between text-center text-white w-full gap-y-4 flex-1 relative top-[-320px] max-lg:top-[-292px] max-lg:gap-y-2 max-sm:top-[-369px] 2xl:top-[-415px]">
                   {/* Title */}
                   <h5 className="text-lg md:text-xl font-normal text-[#00BAA9]">
                     {["Stealth Trader", "Quantum Navigator", "Infinity Matrix"][
@@ -60,7 +60,7 @@ const HomeEight = () => {
                   </ul>
 
                   {/* Profit Information */}
-                  <p className="text-base max-sm:text-sm">
+                  <p className="text-base max-sm:text-sm max-lg:text-[12px]">
                     Earns up to{" "}
                     <span className="text-[#00BAA9]">
                       {["0.5%", "1.5%", "2%"][index]}
@@ -69,7 +69,7 @@ const HomeEight = () => {
                   </p>
 
                   {/* Minimum Investment */}
-                  <p className="text-base max-sm:text-sm">
+                  <p className="text-base max-sm:text-sm max-lg:text-[12px]">
                     Minimum investment required: <br className="hidden md:block max-sm:block" />
                     <span className="text-[#00BAA9]">
                       ${["1,000", "5,000", "10,000"][index]}

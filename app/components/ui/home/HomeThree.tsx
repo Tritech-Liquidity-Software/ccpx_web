@@ -14,7 +14,7 @@ const HomeThree = () => {
                 <Image src={sec3_bitcoin_icon} className="w-28 h-fit" alt="sec3_bitcoin_icon"></Image>
             </div>
             <Container>
-                <div className="px-40 max-sm:px-4">
+                <div className="px-40 max-lg:px-10 max-sm:px-4">
                     <div className="relative overflow-x-auto">
                         <table className="w-full overflow-hidden border-collapse">
                             <thead className="text-xs text-white uppercase bg-[url('/images/sec3-table-bg.png')] bg-no-repeat bg-[_100%] overflow-hidden">

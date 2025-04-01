@@ -12,7 +12,7 @@ const HomeEleven = () => {
             <h3  className="text-3xl font-semibold text-[#00BAA9] text-center pb-6 max-sm:pb-0 max-sm:pt-8 max-sm:text-2xl">Testimonials</h3>
             <p className="text-xl font-normal text-white text-center py-2 max-sm:text-sm">Discover what our satisfied customers have to say about their experiences with our products/services.</p>
             <Container>
-                <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-x-6 max-sm:gap-y-6 px-6 py-16 max-sm:pt-6">
+                <div className="grid grid-cols-3 max-lg:grid-cols-2 max-lg:gap-6 max-sm:grid-cols-1 gap-x-6 max-sm:gap-y-6 px-6 py-16 max-sm:pt-6">
                     <div className="sec-eleven-card-one py-10 px-8 flex flex-col justify-center gap-y-6 relative overflow-hidden">
                         <div className="flex justify-start items-center gap-x-4">
                             <Image src={bitcoin_icon} className="w-12 h-fit" alt="bitcoin_icon" />

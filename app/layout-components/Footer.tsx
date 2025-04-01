@@ -10,15 +10,14 @@ import ccpexlogo from "@/public/images/ccpexlogo.png"
 
 const Footer = () => {
     return (
-        <div className="p-6 max-sm:p-3">
+        <div className="p-6 max-sm:p-3 max-lg:p-1">
             <Container>
-                <div className="bg-black/25 rounded-3xl max-sm:rounded-xl border border-[#d9d9d9]/10 backdrop-blur-2xl pt-20 max-sm:pt-10 px-10 max-sm:px-4 max-w-screen-xl mx-auto">
+                <div className="bg-black/25 rounded-3xl max-sm:rounded-xl border border-[#d9d9d9]/10 backdrop-blur-2xl pt-20 max-lg:pt-10 max-sm:pt-10 px-10 max-sm:px-4 max-w-screen-xl mx-auto">
                     {/* Main Grid */}
-                    <div className="grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-x-4 max-sm:gap-x-0 gap-y-3">
+                    <div className="grid grid-cols-7  max-md:grid-cols-2 max-sm:grid-cols-1 max-lg:gap-2 gap-x-4 max-sm:gap-x-0 gap-y-3">
                         {/* Logo */}
                         <div className="col-span-1">
                             <Image src={ccpexlogo} className="w-[80px] max-sm:w-[48px] h-fit" alt="ccpexlogo"></Image>
-
                         </div>
 
                         {/* Home Link */}
@@ -49,10 +48,10 @@ const Footer = () => {
                                     Connect with us
                                 </span>
                                 <div className="flex justify-center gap-x-4">
-                                    <Image src={fb_icon} className="w-7 h-fit" alt="Facebook" />
+                                    {/* <Image src={fb_icon} className="w-7 h-fit" alt="Facebook" /> */}
                                     <Image src={insta_icon} className="w-7 h-fit" alt="Instagram" />
                                     <Image src={yt_icon} className="w-7 h-fit" alt="YouTube" />
-                                    <Image src={x_icon} className="w-7 h-fit" alt="Twitter" />
+                                    {/* <Image src={x_icon} className="w-7 h-fit" alt="Twitter" /> */}
                                 </div>
                             </div>
                         </div>
@@ -70,12 +69,12 @@ const Footer = () => {
 
                             {/* Call to Action */}
                             <div className="flex flex-col gap-y-4">
-                                <span className="text-base font-normal text-[#00BAA9]">
+                                <span className="text-base max-lg:text-[12px] font-normal text-[#00BAA9]">
                                     Start Your Trade Journey Today
                                 </span>
                                 <a href="https://oi.ccpex.io/user/register" target="_blank">
 
-                                    <button className="primary-btn py-2.5 px-8 text-white w-full rounded-md bg-[#00BAA9] hover:bg-[#008b84] transition-all">
+                                    <button className="primary-btn py-2.5 px-8 max-lg:px-2 text-white w-full rounded-md bg-[#00BAA9] hover:bg-[#008b84] transition-all">
                                         Join the Revolution today
                                     </button>
                                 </a>
@@ -116,7 +115,6 @@ const Footer = () => {
                             <a href="/Privacy-Policy" className="text-xs font-normal text-[#C0C0C0] w-4/12 max-sm:w-full">
                                 Privacy Policy
                             </a>
-
                         </div>
                     </div>
                 </div>

@@ -88,7 +88,7 @@ const ContactPopup = () => {
     return (
         <>
             {/* Contact Button */}
-            <button onClick={() => setIsOpen(true)} className="text-white text-left">
+            <button onClick={() => setIsOpen(true)} className="text-white text-left max-lg:text-[12px]">
                 Contact
             </button>
 

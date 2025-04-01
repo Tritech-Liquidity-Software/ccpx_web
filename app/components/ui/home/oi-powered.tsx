@@ -13,7 +13,7 @@ const IsoCertifiedSection = () => {
         <>
             <section className="relative md:py-10 overflow-hidden mx-20 max-sm:mx-5">
                 <h2 className="text-3xl font-semibold text-[#00BAA9] text-center pb-20 max-sm:pb-10 max-sm:pt-5 max-sm:text-xl max-sm:px-4">Why Click-Based Trading?</h2>
-                <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:gap-y-10">
+                <div className="grid grid-cols-2 max-lg:grid-cols-1 max-sm:grid-cols-1 max-sm:gap-y-10">
                     <div className="">
                         <div className="bg-[linear-gradient(263.3deg,rgba(0,0,0,0.25)_5.82%,rgba(217,217,217,0.03)_97.91%)] border border-[#1e3232] p-[17px] rounded-md ">
                             <div className="flex justify-center gap-x-10 items-center">

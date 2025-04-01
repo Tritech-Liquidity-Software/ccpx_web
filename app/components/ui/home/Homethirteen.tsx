@@ -9,8 +9,6 @@ const IsoCertifiedSection = () => {
                 <p className="text-lg max-sm:text-sm font-normal text-white text-center pb-10 max-sm:px-4">CCPEX is the worlds first ISO 42001 certified Al-based crypto exchange</p>
 
                 <div className="flex flex-col md:flex-row items-center justify-center">
-                    {/* Left Side: ISO Badge */}
-
                     <div className="relative w-[430px] md:w-[480px] max-sm:hidden">
                         <Image
                             src="/images/iso-badge.png"
@@ -19,10 +17,8 @@ const IsoCertifiedSection = () => {
                             height={500}
                             className="w-full h-auto "
                         />
-
-
                     </div>
-                    <div className="flex justify-center max-sm:block lg:hidden">
+                    <div className="flex justify-center max-sm:block lg:hidden max-lg:hidden">
                         <Image
                             src="/images/mobileiso.png"
                             alt="ISO Certified Badge"
@@ -48,7 +44,7 @@ const IsoCertifiedSection = () => {
                         </div>
 
                         {/* Box 2 */}
-                        <div className="sec-nine-card p-6   w-[380px] md:w-[480px] max-sm:w-full">
+                        <div className="sec-nine-card p-6  w-[380px] md:w-[480px] max-sm:w-full">
                             <div className="flex items-center gap-4">
                                 <Image src="/images/handshake-icon.png" alt="Trust Icon" width={40} height={40} />
                                 <h3 className="text-[#00BAA9] text-lg font-semibold max-sm:text-base">Why Is ISO 42001 Important?</h3>

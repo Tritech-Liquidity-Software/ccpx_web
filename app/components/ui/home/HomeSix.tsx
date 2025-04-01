@@ -13,17 +13,17 @@ const HomeSix = () => {
                     <div className="flex flex-col justify-center items-center max-sm:gap-y-6">
                         <div className="sec-six-card-bg p-4 w-5/12 relative right-4 max-sm:static max-sm:w-full">
                             <h3 className="text-base font-normal text-[#2DFFE7]">Professional Traders</h3>
-                            <p className="text-base font-normal text-white max-sm:text-sm">Gain a competitive edge with Organized Intelligence.</p>
+                            <p className="text-base font-normal text-white max-sm:text-sm max-lg:text-sm">Gain a competitive edge with Organized Intelligence.</p>
                         </div>
                         <Image src={sec6_track_img} className="max-sm:hidden" alt="sec6_track_img"></Image>
                         <div className="flex justify-between max-sm:flex-col gap-y-6">
                             <div className="sec-six-card-bg flex flex-col justify-center p-4 w-5/12 relative left-8 max-sm:static max-sm:w-full">
                                 <h3 className="text-base font-normal text-[#2DFFE7]">Individual Investors</h3>
-                                <p className="text-base font-normal text-white max-sm:text-sm">Enhance crypto portfolios with advanced tools.</p>
+                                <p className="text-base font-normal text-white max-sm:text-sm max-lg:text-sm">Enhance crypto portfolios with advanced tools.</p>
                             </div>
-                            <div className="sec-six-card-bg flex flex-col justify-center p-4 w-5/12 relative bottom-5 max-sm:static max-sm:w-full">
+                            <div className="sec-six-card-bg flex flex-col justify-center p-4 w-5/12 relative bottom-5 max-lg:left-[23px] max-sm:static max-sm:w-full">
                                 <h3 className="text-base font-normal text-[#2DFFE7]">Financial Institutions</h3>
-                                <p className="text-base font-normal text-white max-sm:text-sm">Integrate decentralized, AI-powered trading solutions for clients.</p>
+                                <p className="text-base font-normal text-white max-sm:text-sm max-lg:text-sm">Integrate decentralized, AI-powered trading solutions for clients.</p>
                             </div>
                         </div>
                     </div>

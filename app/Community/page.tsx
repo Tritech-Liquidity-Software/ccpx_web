@@ -38,6 +38,11 @@ export default function CCPEXSection() {
                 <p className="text-lg font-normal text-white py-6 max-sm:text-sm mt-2 text-center px-20 max-sm:px-4">To ensure our community thrives, we reinvest a significant share of OI bot profits directly into community development.
                     That means the success of our technology translates into real-world rewards, growth incentives, and life-changing opportunities for YOU.
                 </p>
+                <div className="flex justify-center">
+                    <button className="mt-8 bg-[#00BAA9] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-[#008F88] transition">
+                        🫱 Join the CCPEX Community
+                    </button>
+                </div>
             </div>
             <div className="mt-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
                 <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-8 max-sm:px-6">
@@ -87,7 +92,7 @@ export default function CCPEXSection() {
                                 { plan: "Quantum", userShare: "60%", botShare: "40%" },
                                 { plan: "Infinity", userShare: "75%", botShare: "25%" },
                             ].map((row, index) => (
-                                <tr  key={index} className={index % 2 === 0 ? "bg-gray-800" : "bg-gray-700"}>
+                                <tr key={index} className={index % 2 === 0 ? "bg-gray-800" : "bg-gray-700"}>
                                     <td className="py-4 px-6 border-b border-gray-600 text-center text-white opacity-[.5]">{row.plan}</td>
                                     <td className="py-4 px-6 border-b border-gray-600 text-center text-white opacity-[.5]">{row.userShare}</td>
                                     <td className="py-4 px-6 border-b border-gray-600 text-center text-white opacity-[.5]">{row.botShare}</td>

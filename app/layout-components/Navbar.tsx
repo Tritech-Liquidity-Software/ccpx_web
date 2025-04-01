@@ -80,22 +80,21 @@ const Navbar = () => {
                         : "bg-transparent w-full h-24 z-[999] fixed top-0 transition-all ease-in-out duration-500 max-sm:h-20"
                 }
             >
-                <div className="container mx-auto px-[2.5rem] max-sm:px-4 h-full">
+                <div className="container mx-auto px-[2.5rem] max-lg:px-[10px] max-sm:px-4 h-full">
                     <div className="flex justify-between items-center h-full">
                         <ul>
                             <li>
-                                <Link href="/" className="flex gap-x-4 items-center">
-                                    <Image src={ccpexlogo} className="w-[80px] max-sm:w-[48px] h-fit" alt="ccpexlogo"></Image>
-
+                                <Link href="/" className="flex gap-x-4 max-lg:gap-x-[10px] items-center">
+                                    <Image src={ccpexlogo} className="w-[80px] max-sm:w-[48px] max-lg:w-[53px] h-fit" alt="ccpexlogo"></Image>
                                 </Link>
                             </li>
                         </ul>
                         <div className="hidden sm:flex">
-                            <ul className="hidden sm:flex gap-x-[1.5rem] header-bg py-2 px-4">
+                            <ul className="hidden sm:flex gap-x-[1.5rem] max-lg:gap-x-[10px] header-bg py-2 px-4">
                                 {navigation.map((menu, index) => (
                                     <li className="nav__item font-[family-name:var(--font-inter)]" key={index}>
                                         <Link
-                                            className={`hover:text-[#00BAA9] text-base text-white transition-all ease-in-out duration-300 focus:text-[#00BAA9] ${
+                                            className={`hover:text-[#00BAA9] text-base max-lg:text-xs text-white transition-all ease-in-out duration-300 focus:text-[#00BAA9] ${
                                                 // Only highlight if it's a section on the current page
                                                 !menu.href.pathname.startsWith("/") &&
                                                     activeSection === menu.href.pathname
@@ -113,10 +112,10 @@ const Navbar = () => {
                         <div className="hidden sm:flex">
                             <ul className="hidden sm:flex">
                                 <li>
-                                    <div className="btn-wrap flex justify-between gap-x-4 items-center">
+                                    <div className="btn-wrap flex justify-between gap-x-4 max-lg:gap-x-[10px] items-center">
                                         <ContactPopup />
                                         <a href="https://oi.ccpex.io/user/register" target="_blank">
-                                            <button className="py-2 px-6 text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
+                                            <button className="py-2 px-6 text-white bg-gradient-to-r from-[#00baa9] max-lg:text-[12px] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
                                                 Start Trading Now
                                             </button>
                                         </a>
@@ -160,7 +159,7 @@ const Navbar = () => {
                                 <ContactPopup />
 
                                 <a href="https://oi.ccpex.io/user/register" target="_blank">
-                                    <button className="py-2 px-6 text-sm text-white bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
+                                    <button className="py-2 px-6 text-sm text-white max-lg:text-[12px] bg-gradient-to-r from-[#00baa9] to-black rounded-lg border-[.8px] border-[rgba(153,153,153,0.5)] backdrop-blur-2xl transition-all ease-in-out duration-300">
                                         Start Trading Now
                                     </button>
                                 </a>

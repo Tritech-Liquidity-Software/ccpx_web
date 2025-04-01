@@ -6,7 +6,7 @@ import bitcion from "@/public/images/whyoi.png"
 const ClickExecutionToast = () => {
     return (
         <>
-            <div className="text-white py-12 px-6 md:px-16 lg:px-32">
+            <div className="text-white py-12 px-6 px-16 lg:px-32 max-lg:px-4">
                 <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-bold text-teal-400 max-sm:text-2xl">
                     Click Execution Toast Message
                 </h2>
