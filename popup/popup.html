@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Popup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div id="popup-container" class="fixed inset-0 bg-[#1c1c1ceb] bg-opacity-50 flex justify-center items-center z-[9999]" style="display: none;">
+    <div class="bg-[#00000099] p-8 rounded-lg w-[33rem] relative border border-[#0fac9e]">
+      <button id="popup-close" class="absolute top-2 right-2 text-white text-lg">✖</button>
+
+      <a class="flex justify-center items-center" href="/index.html">
+        <img alt="ccpexlogo" loading="lazy" width="80" height="55" src="./images/ccpexlogo.png" class="w-[80px] max-sm:w-[48px] h-fit" />
+      </a>
+
+      <p class="text-center text-white text-base">Please complete the form and submit your request.</p>
+      <p class="text-center text-[#3CE1D8] py-2">We will be in touch shortly</p>
+      <p class="text-center text-[#B7B7B7] text-sm pb-5">We offer a large range of trade service to enhance your financial grow.</p>
+
+      <form action="submit.php" method="POST" class="flex flex-col gap-y-4">
+        <div class="flex justify-between max-sm:flex-col max-sm:gap-y-6 gap-x-4">
+          <div class="flex flex-col gap-y-2">
+            <label class="text-[14px] font-normal text-white" for="firstname">First Name</label>
+            <input name="firstname" required type="text" class="bg-[#F5F5F508] placeholder:text-[#B7B7B77A] text-[#B7B7B7] border border-[rgba(153,153,153,0.16)] py-1 px-2 rounded-md focus:outline-none" />
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <label class="text-[14px] font-normal text-white" for="lastname">Last Name</label>
+            <input name="lastname" required type="text" class="bg-[#F5F5F508] placeholder:text-[#B7B7B77A] text-[#B7B7B7] border border-[rgba(153,153,153,0.16)] py-1 px-2 rounded-md focus:outline-none" />
+          </div>
+        </div>
+
+        <div class="flex justify-between max-sm:flex-col max-sm:gap-y-6 gap-x-4">
+          <div class="flex flex-col gap-y-2">
+            <label class="text-[14px] font-normal text-white" for="mob_no">Mobile No</label>
+            <input name="mob_no" required type="text" pattern="\d*" class="bg-[#F5F5F508] placeholder:text-[#B7B7B77A] text-[#B7B7B7] border border-[rgba(153,153,153,0.16)] py-1 px-2 rounded-md focus:outline-none" />
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <label class="text-[14px] font-normal text-white" for="email">Email</label>
+            <input name="email" required type="email" class="bg-[#F5F5F508] placeholder:text-[#B7B7B77A] text-[#B7B7B7] border border-[rgba(153,153,153,0.16)] py-1 px-2 rounded-md focus:outline-none" />
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-y-2">
+          <label class="text-lg font-normal text-white" for="description">Description</label>
+          <textarea name="description" required class="bg-[#F5F5F508] text-white border border-[rgba(153,153,153,0.16)] py-1 px-2 rounded-md focus:outline-none"></textarea>
+        </div>
+
+        <button type="submit" class="primary-btn text-white py-2 px-4 rounded-md flex justify-center items-center hover:bg-transparent">Request for Trade</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
